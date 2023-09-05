@@ -1,0 +1,6 @@
+framework module ZJExtension {
+  umbrella header "ZJExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

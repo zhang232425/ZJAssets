@@ -1,0 +1,6 @@
+framework module ZJLocalizable {
+  umbrella header "ZJLocalizable-umbrella.h"
+
+  export *
+  module * { export * }
+}

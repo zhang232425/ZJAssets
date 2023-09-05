@@ -1,0 +1,13 @@
+/* 
+  Locale.strings
+  Pods
+
+  Created by Jercan on 2022/10/17.
+  
+*/
+
+"code_error_4xx" = "Request error. Please try again later.";
+"code_error_5xx" = "Server error. Please try again later.";
+"network_error" = "No internet connection";
+"request_timeout" = "Request Timeout";
+"illegal_operation" = "Illegal operation";

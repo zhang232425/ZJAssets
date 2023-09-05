@@ -1,0 +1,34 @@
+{
+  "name": "ZJBase",
+  "version": "0.1.0",
+  "summary": "A short description of ZJBase.",
+  "homepage": "https://github.com/zhang232425/ZJBase",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhang232425": "519301084@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zhang232425/ZJBase.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ZJBase/Classes/**/*",
+  "resource_bundles": {
+    "ZJBase": [
+      "ZJBase/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "RTRootNavigationController": [
+
+    ],
+    "ZJExtension": [
+
+    ]
+  }
+}

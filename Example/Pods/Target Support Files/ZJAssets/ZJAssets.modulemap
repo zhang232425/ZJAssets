@@ -1,0 +1,6 @@
+framework module ZJAssets {
+  umbrella header "ZJAssets-umbrella.h"
+
+  export *
+  module * { export * }
+}

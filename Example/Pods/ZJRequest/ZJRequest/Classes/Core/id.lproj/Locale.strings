@@ -1,0 +1,13 @@
+/* 
+  Locale.strings
+  Pods
+
+  Created by Jercan on 2022/10/17.
+  
+*/
+
+"code_error_4xx" = "Kesalahan permintaan. Silakan coba lagi nanti.";
+"code_error_5xx" = "Server error. Silakan coba lagi nanti.";
+"network_error" = "Tidak ada koneksi internet";
+"request_timeout" = "Waktu permintaan habis";
+"illegal_operation" = "Operasi ilegal";

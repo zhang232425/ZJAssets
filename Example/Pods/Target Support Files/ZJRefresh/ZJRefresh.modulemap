@@ -1,0 +1,6 @@
+framework module ZJRefresh {
+  umbrella header "ZJRefresh-umbrella.h"
+
+  export *
+  module * { export * }
+}

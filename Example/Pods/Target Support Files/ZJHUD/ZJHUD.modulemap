@@ -1,0 +1,6 @@
+framework module ZJHUD {
+  umbrella header "ZJHUD-umbrella.h"
+
+  export *
+  module * { export * }
+}

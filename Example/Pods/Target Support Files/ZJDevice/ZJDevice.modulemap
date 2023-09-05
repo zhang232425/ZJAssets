@@ -1,0 +1,6 @@
+framework module ZJDevice {
+  umbrella header "ZJDevice-umbrella.h"
+
+  export *
+  module * { export * }
+}

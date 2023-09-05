@@ -1,0 +1,32 @@
+{
+  "name": "ZJRefresh",
+  "version": "0.1.0",
+  "summary": "ZJRefresh.",
+  "homepage": "https://github.com/zhang232425/ZJRefresh",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhang232425": "yonathan@asetku.com"
+  },
+  "source": {
+    "git": "https://github.com/zhang232425/ZJRefresh.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ZJRefresh/Classes/**/*",
+  "resource_bundles": {
+    "ZJRefresh": [
+      "ZJRefresh/Assets/**/*"
+    ]
+  },
+  "static_framework": true,
+  "dependencies": {
+    "ESPullToRefresh": [
+
+    ]
+  }
+}

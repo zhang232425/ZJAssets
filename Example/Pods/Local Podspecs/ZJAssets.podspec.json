@@ -1,0 +1,89 @@
+{
+  "name": "ZJAssets",
+  "version": "0.1.0",
+  "summary": "ZJAssets.",
+  "homepage": "https://github.com/zhang232425/ZJAssets",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhang232425": "yonathan@asetku.com"
+  },
+  "source": {
+    "git": "https://github.com/zhang232425/ZJAssets.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ZJAssets/Classes/**/*",
+  "resource_bundles": {
+    "ZJAssets": [
+      "ZJAssets/Assets/**/*"
+    ]
+  },
+  "static_framework": true,
+  "dependencies": {
+    "Then": [
+
+    ],
+    "Action": [
+
+    ],
+    "Charts": [
+
+    ],
+    "RxCocoa": [
+
+    ],
+    "RxSwift": [
+
+    ],
+    "SwiftDate": [
+
+    ],
+    "RxSwiftExt": [
+
+    ],
+    "RxDataSources": [
+
+    ],
+    "JXSegmentedView": [
+
+    ],
+    "JXPagingView/Paging": [
+
+    ],
+    "ZJRequest": [
+
+    ],
+    "ZJLocalizable": [
+
+    ],
+    "ZJRouter": [
+
+    ],
+    "ZJRoutableTargets": [
+
+    ],
+    "ZJBase": [
+
+    ],
+    "ZJExtension": [
+
+    ],
+    "ZJHUD": [
+
+    ],
+    "ZJCommonView": [
+
+    ],
+    "ZJRefresh": [
+
+    ],
+    "ZJCommonDefines": [
+
+    ]
+  }
+}

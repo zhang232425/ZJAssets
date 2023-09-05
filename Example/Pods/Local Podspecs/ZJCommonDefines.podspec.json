@@ -1,0 +1,21 @@
+{
+  "name": "ZJCommonDefines",
+  "version": "0.1.0",
+  "summary": "A short description of ZJCommonDefines.",
+  "homepage": "https://github.com/zhang232425/ZJCommonDefines",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhang232425": "yonathan@asetku.com"
+  },
+  "source": {
+    "git": "https://github.com/zhang232425/ZJCommonDefines.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ZJCommonDefines/Classes/**/*"
+}

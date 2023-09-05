@@ -1,13 +1,19 @@
 use_frameworks!
-
 platform :ios, '10.0'
 
+source 'git@github.com:zhang232425/ZJSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+install! 'cocoapods', :deterministic_uuids => false
+
 target 'ZJAssets_Example' do
+  
   pod 'ZJAssets', :path => '../'
-
-  target 'ZJAssets_Tests' do
-    inherit! :search_paths
-
-    
-  end
+  
+  pod 'ZJRoutableTargets',   :git => 'git@github.com:zhang232425/ZJRoutableTargets.git', :branch => 'main'
+  pod 'ZJBase',              :git => 'git@github.com:zhang232425/ZJBase.git', :branch => 'main'
+  pod 'ZJExtension',         :git => 'git@github.com:zhang232425/ZJExtension.git', :branch => 'main'
+  pod 'ZJCommonView',        :git => 'git@github.com:zhang232425/ZJCommonView.git', :branch => 'main'
+  pod 'ZJRefresh',           :git => 'git@github.com:zhang232425/ZJRefresh.git', :branch => 'main'
+  pod 'ZJCommonDefines',     :git => 'git@github.com:zhang232425/ZJCommonDefines.git', :branch => 'main'
+  
 end

@@ -1,0 +1,32 @@
+{
+  "name": "ZJRoutableTargets",
+  "version": "0.1.0",
+  "summary": "A short description of ZJRoutableTargets.",
+  "homepage": "https://github.com/zhang232425/ZJRoutableTargets",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhang232425": "519301084@qq.com"
+  },
+  "source": {
+    "git": "git@github.com:zhang232425/ZJRoutableTargets.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ZJRoutableTargets/Classes/**/*",
+  "resource_bundles": {
+    "ZJRoutableTargets": [
+      "ZJRoutableTargets/Assets/**/*"
+    ]
+  },
+  "static_framework": true,
+  "dependencies": {
+    "ZJRouter": [
+
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module ZJRegion {
+  umbrella header "ZJRegion-umbrella.h"
+
+  export *
+  module * { export * }
+}

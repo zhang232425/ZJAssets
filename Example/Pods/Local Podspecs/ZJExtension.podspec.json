@@ -1,0 +1,34 @@
+{
+  "name": "ZJExtension",
+  "version": "0.1.0",
+  "summary": "A short description of ZJExtension.",
+  "homepage": "https://github.com/zhang232425/ZJExtension",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhang232425": "519301084@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zhang232425/ZJExtension.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ZJExtension/Classes/**/*",
+  "resource_bundles": {
+    "ZJExtension": [
+      "ZJExtension/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "SDWebImage": [
+
+    ],
+    "CryptoSwift": [
+
+    ]
+  }
+}
