@@ -1,0 +1,122 @@
+/* 
+  Locale.strings
+  Pods
+
+  Created by Jercan on 2023/9/12.
+  
+*/
+
+/// 注册
+"register" = "Daftar";
+"enterPhoneNumer" = "Silakan masukkan no. handphone Anda";
+"enterVerficationCode" = "Masukkan kode verifikasi";
+"send" = "Kirim";
+"resend" = "Kirim Ulang";
+"next" = "Selanjutnya";
+"tncLendingBorrowing" = "Syarat dan Ketentuan Pinjam Meminjam Asetku";
+"privacyPolicy" = "Kebijakan Privasi Asetku";
+"agreementDescription" = "Saya telah membaca dan menyetujui %@ dan %@";
+
+"phoneCountError" = "Nomor handphone harus 10-13 angka";
+"phonePrefixError" = "Nomor handphone harus dimulai dengan 08";
+
+"captchaEmpty" = "Mohon masukkan kode verifikasi.";
+"agreementEmpty" = "Mohon pastikan Anda telah membaca dan menyetujui Syarat dan Ketentuan Pinjam Meminjam AsetKu dan Kebijakan Privasi Asetku.";
+"enterReferralCode" = "Masukkan kode referral";
+"makeSureApprovedTerms" = "Mohon pastikan Anda telah membaca dan menyetujui syarat dan ketentuan";
+"accountAlreadyExists" = "Akun %@ sudah ada. Silakan langsung login";
+
+"passwordPlaceholder" = "Masukkan kata sandi login";
+"confirm" = "Konfirmasi";
+
+// 设置密码
+"setLoginPassword" = "Atur Kata Sandi";
+"usePasswordLoginLater" = "Selanjutnya Anda bisa login dengan nomor telepon dan kata sandi Anda";
+"skip" = "Lewati";
+"enterPassword" = "Silakan Masukkan 8-16 Digit Kata Sandi";
+"passwordFormatError" = "The format of the password you set is incorrect. Password must be 8-16 characters";
+"setPasswordSuccessfully" = "Atur kata sandi berhasil";
+"correctPasswordHint" = "Masukkan kata sandi 8-16 karakter, terdiri dari huruf dan angka";
+"correctPasswordToast" = "Kata sandi harus 8-16 karakter, terdiri dari huruf dan angka";
+"passwordTlaceholder" = "Masukkan kata sandi login";
+
+// MARK: - ReferralCodeEnter
+"referralCode" = "Koder referral";
+"referralCodeDescription" = "Masukkan kode referral teman Anda, maka Anda dan teman Anda akan mendapat kupon diskon";
+"referralSkip" = "Lewati";
+"submit" = "Kirim";
+"referralEmpty" = "Silakan masukkan kode referral dari orang lain";
+"success" = "Berhasil";
+
+/// 登录
+"login" = "Login";
+"loginNow" = "Login Sekarang";
+
+//MARK: - 密码登录
+"loginWithPassword" = "Login dengan Kata Sandi";
+"welcomeToAsetku" = "Selamat Datang di Asetku";
+"enterLoginPwd" = "Silakan masukkan kata sandi login Anda";
+"forgotPassword" = "Lupa Kata sandi?";
+"loginWithCode" = "Login dengan SMS OTP";
+"accountNotExistOrPasswordWrong" = "Tidak ada akun ini atau kata sandi salah";
+"loginSuccessful" = "Berhasil Login";
+"ok" = "Konfirmasi";
+"accountFrozenNotice" = "Akun kamu telah dinonaktifkan. Jika ada pertanyaan silakan hubungi";
+"accountFrozenPhonePrefix" = "customer service di：";
+"iKnow" = "Saya Mengerti";
+"phoneCopied" = "Nomor telepon disalin";
+"frozenTitle" = "Akun Tidak Aktif";
+
+//MARK: - 指纹/人脸登录
+"touchLoginButtonTitle" = "Klik untuk login sidik jari";
+"faceLoginButtonTitle" = "Klik untuk login dengan Face ID";
+"switchLoginMethod" = "Ubah cara login";
+"gestureLoginButtonTitle" = "Login dengan Pola Kunci";
+"passwordLoginButtonTitle" = "Login dengan Kata Sandi";
+"gestureNotyetSetToast" = "Anda belum atur sandi Pola Kunci. Silakan login dengan Kata Sandi";
+
+"passcodeNotSetToast" = "Perangkat belum diatur kata sandi. Silakan aktifkan kata sandi";
+"biometryLockoutToast" = "Jumlah kesalahan terlalu banyak. Silakan coba kembali beberapa saat";
+"touchIdunavailableToast" = "Sidik jari belum diaktifkan, silakan ke pengaturan sistem untuk mengaktifkan sidik jari";
+"faceIdunavailableToast" = "Face ID belum diaktifkan, silakan ke pengaturan sistem untuk mengaktifkan Face ID";
+"touchNotEnrolledToast" = "Sidik jari belum diaktifkan, silakan ke pengaturan sistem untuk mengaktifkan sidik jari";
+"faceNotEnrolledToast" = "Face ID belum diaktifkan, silakan ke pengaturan sistem untuk mengaktifkan Face ID";
+"touchChangedToast" = "Sidik jari telah berubah, harap gunakan cara login lain";
+"faceChangedToast" = "Terjadi perubahan pada Face ID. Silakan gunakan metode login lainnya";
+"touchInvalidToast" = "Login Sidik Jari gagal, harap gunakan cara login lain";
+"faceInvalidToast" = "Face ID gagal. Silakan gunakan metode login lainnya";
+"touchIdEvaluateReason" = "Letakkan jari di sensor sidik jari untuk memverifikasi sidik jari Anda";
+"faceIdEvaluateReason" = "Silakan gunakan Face ID untuk verifikasi identitas Anda";
+"evaluationFailToast" = "Verifikasi gagal. Silakan coba kembali";
+
+// MARK: - Gesture
+"set_password_gesture" = "Atur Pola Kunci";
+"set_password_login_gesture" = "Atur pola kunci untuk login dengan cepat";
+"length_error_gesture" = "Anda harus menyambungkan sedikitnya 4 titik.";
+"draw_again_gesture" = "Buat pola kembali untuk mengkonfirmasi";
+"try_agin_gesture" = "Pola tidak cocok";
+"login_gesture" = "Pola kunci login";
+"times_error_gesture" = "Pola salah. Jika salah 4 kali lagi Anda tidak akan dapat menggunakan pola kunci dalam 24 jam";
+"login_move_gesture" = "Login dengan kata sandi";
+"enable_gesture" = "Buka Pola Kunci";
+"disable_gesture" = "Nonaktifkan Pola Kunci";
+"reset_gesture" = "Atur ulang pola kunci";
+"gesture_password_gesture" = "Pola Kunci";
+"login_verify_gesture" = "Verifikasi Kata Sandi Login";
+"verify_gesture" = "Verifikasi Pola Kunci";
+"disable_move_gesture" = "Anda dapat login dengan kata sandi setelah pola kunci dinonaktifkan";
+"disable_verify_gesture" = "Diperlukan kata sandi login Anda untuk nonaktifkan pola kunci";
+"enter_gesture" = "Masukkan kata sandi login";
+"submit_gesture" = "kirim";
+"enter_verify_gesture" = "Masukkan kata sandi login untuk verifikasi identitas Anda.";
+"login_remind_gesture" = "Anda bisa login dengan cepat setelah mengatur pola kunci";
+"login_reset_verify_gesture" = "Diperlukan kata sandi login Anda untuk mengatur ulang pola kunci";
+"reset_verify_gesture" = "Diperlukan gambar pola Anda untuk mengatur ulang pola kunci";
+"max_times_error_gesture" = "Kata sandi salah 5 kali, coba lagi setelah 24 jam";
+"incorrect_gesture" = "Kata sandi salah, masih bisa mencoba %ld kali.";
+"disable_will_verify_gesture" = "Gambar pola Anda untuk nonaktifkan pola kunci";
+"login_enter_remind_gesture" = "Masukkan kata sandi login";
+"enter_remind_gesture" = "Silakan masukkan pola kunci";
+"skip_gesture" = "Lewati";
+"success_gesture" = "Pola kunci berhasil dibuat!";
+"hi_gesture" = "HI ! Smart Money Manager.";

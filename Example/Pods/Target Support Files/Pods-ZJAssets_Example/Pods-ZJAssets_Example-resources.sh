@@ -98,8 +98,12 @@ EOM
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJAssets/ZJAssets.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJBase/ZJBase.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJCommonView/ZJCommonView.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJHUD/ZJHUD.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJLogin/ZJLogin.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJLoginManager/ZJMain.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJModalTransition/ZJModalTransition.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJRefresh/ZJRefresh.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJRequest/ZJRequest.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJRoutableTargets/ZJRoutableTargets.bundle"
@@ -107,8 +111,12 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJAssets/ZJAssets.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJBase/ZJBase.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJCommonView/ZJCommonView.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJHUD/ZJHUD.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJLogin/ZJLogin.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJLoginManager/ZJMain.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJModalTransition/ZJModalTransition.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJRefresh/ZJRefresh.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJRequest/ZJRequest.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZJRoutableTargets/ZJRoutableTargets.bundle"

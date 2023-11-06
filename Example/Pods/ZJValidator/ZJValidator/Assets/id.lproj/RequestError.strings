@@ -1,0 +1,118 @@
+/* 
+  RequestError.strings
+  Pods
+
+  Created by Jercan on 2022/10/19.
+  
+*/
+
+//MARK: - App 转码错误
+"APP.0001" = "Maaf, terjadi kesalahan sistem operasi. Silakan dicoba kembali.";
+
+//MARK: - 网络错误
+"TimeOut" = "Waktu permintaan habis.";
+
+//MARK: - System
+"SYSTEM.0001" = "Terjadi kesalahan. Silakan coba kembali";
+"SYSTEM.0002" = "Parameter yang dimasukkan salah, silakan coba kembali.";
+"SYSTEM.0003" = "Maaf, sistem mengalami kesalahan tak terduga. Silakan dicoba kembali.";
+"SYSTEM.0004" = "Maaf, terjadi kesalahan sistem operasi. Silakan dicoba kembali.";
+"SYSTEM.0005" = "Maaf, terjadi kesalahan data internal. Silakan dicoba kembali. ";
+"SYSTEM.0006" = "Maaf, terjadi kesalahan sistem internal. Silakan dicobakembali.";
+"SYSTEM.0007" = "Terjadi kesalahan tak dikenal. Mohon coba kembali.";
+"SYSTEM.0008" = "Terjadi kesalahan tak dikenal. Mohon coba kembali.";
+"SYSTEM.0009" = "Berhasil. Mohon jangan mencoba ulang.";
+"SYSTEM.0010" = "Terjadi kesalahan tak dikenal. Mohon coba kembali.";
+"SYSTEM.0011" = "Terjadi kesalahan tak dikenal. Mohon coba kembali.";
+"SYSTEM.0012" = "Status login tidak valid. Silakan login kembali.";
+
+//MARK: - Profile
+"PROFILE.0001" = "Kode Negara salah. Mohon coba kembali.";
+"PROFILE.0002" = "Informasi yang dimasukkan salah. Mohon coba kembali.";
+"PROFILE.0003" = "Nomor telepon harus 10-13 digit";
+"PROFILE.0004" = "Nomor telepon ini sudah terdaftar. Anda bisa langsung login dengan nomor ini atau gunakan nomor baru untuk mendaftar.";
+"PROFILE.0005" = "Oh, kata sandi belum pernah dibuat. Buat sekarang!";
+"PROFILE.0006" = "Kata sandi yang dimasukkan salah. Mohon dicoba kembali.";
+"PROFILE.0007" = "Nomor HP ini belum terdaftar.";
+"PROFILE.0008" = "Kata sandi sudah dibuat.";
+"PROFILE.0009" = "Akun ini tidak terdaftar atau kata sandi salah.";
+"PROFILE.0010" = "Anda belum memasukkan alamat anda!";
+"PROFILE.0011" = "Maaf, anda belum terverifikasi. Verifikasi sekarang!";
+"PROFILE.0012" = "Anda salah memasukan kata sandi berulang kali. Mohon menunggu dan coba kembali.";
+"PROFILE.0013" = "Maaf, anda belum terverifikasi. Verifikasi sekarang!";
+
+//MARK: - HTTP
+"HTTP.0001" = "Terjadi kesalahan tak dikenal. Mohon coba kembali.";
+"HTTP.0002" = "Terjadi kesalahan tak dikenal. Mohon coba kembali.";
+
+//MARK: - Money
+"MONEY.0001" = "Mohon maaf, nilai pendanaan anda tidak cukup.";
+"MONEY.0002" = "Frozen exception.";
+
+//MARK: - Product
+"PRODUCT.0001" = "Produk pendanaan sudah kadaluarsa. Disarankan untuk memilih produk pendanaan lain.";
+"PRODUCT.0002" = "Nilai pendanaan anda untuk produk ini sudah maksimal. Cobalah produk lain.";
+"PRODUCT.0003" = "Jumlah pendanaan anda untuk produk ini sudah maksimal. Cobalah produk lain.";
+"PRODUCT.0004" = "Nilai pendanaan salah, silakan isi kembali.";
+
+//MARK: - Register/Validation
+"REGISTER.0001" = "Jangan mencoba berulang kali. Silakan coba 5 menit lagi.";
+"REGISTER.0002" = "Verifikasi kode sudah kadaluarsa, mohon tekan kembali untuk menerima kode baru.";
+"REGISTER.0003" = "Waktu sudah habis. Mohon dicoba kembali.";
+"REGISTER.0004" = "Bank yang dimasukkan tidak valid. Silakan isi kembali.";
+"REGISTER.0005" = "Pekerjaan yang dimasukkan tidak valid. Silakan isi kembali.";
+"REGISTER.0006" = "Negara yang dimasukkan tidak valid. Silakan isi kembali.";
+"REGISTER.0007" = "Format foto untuk verifikasi salah. Silakan upload kembali.";
+"REGISTER.0008" = "Data anda sedang diverifikasi. Mohon tunggu.";
+"REGISTER.0009" = "Nama pemilik Rekening Bank tidak sesuai dengan Nama Lengkap anda.";
+
+//Mark: - Withdraw
+"WITHDRAW.0001" = "Withdraw insufficient balance.";
+"WITHDRAW.0002" = "Withdraw exclude times limit.";
+"WITHDRAW.0003" = "Withdraw too low.";
+"WITHDRAW.0004" = "Bank code error.";
+"WITHDRAW.0005" = "Account name not match your register name.";
+"WITHDRAW.0006" = "The amount must be an integer.";
+
+//Mark: - Balance
+"BALANCE.0001" = "Balance not found.";
+
+//Mark: - Recharge
+"RECHARGE.0001" = "Recharge not found.";
+"RECHARGE.0002" = "Recharge pay method not found.";
+"RECHARGE.0003" = "Recharge bank code error.";
+"RECHARGE.0004" = "Recharge pay error.";
+"RECHARGE.0005" = "Recharge amount too low.";
+
+//Mark: - Api
+"API.0001" = "Terjadi kesalahan sistem. Mohon coba kembali.";
+"API.0002" = "Terjadi kesalahan sistem. Mohon coba kembali.";
+
+//Mark: - Bankcard
+"BANKCARD.0001" = "Rekening bank tidak ditemukan.";
+"BANKCARD.0002" = "Rekening bank tidak valid.";
+
+//Mark: - Pay
+"PAY.0001" = "Metode pembayaran tidak valid.";
+"PAY.0002" = "You already applied referral code of this promo.";
+
+//Mark: - Referrer
+"REFERRER.0001" = "Anda sudah pernah mengisi kode referral.";
+"REFERRER.0002" = "Kode referral yg diisi salah.";
+"REFERRER.0003" = "Kode referral hanya bisa diisi oleh pengguna baru.";
+"REFERRER.0004" = "Silakan masukkan kode referral dari orang lain.";
+
+//Mark: - Usertask
+"USERTASK.0002" = "Anda telah menerima hadiah!";
+
+//Mark: - Captcha
+"CAPTCHA.0001" = ""; //弹框
+"CAPTCHA.0002" = "Maaf, demi keamanan Anda saat ini tidak dapat memproses ke tahap selanjutnya. Silahkan mencoba kembali setelah 24 Jam, untuk informasi lebih lanjut, silahkan hubungi customer service kami."; //无弹框 提示冻结24小时
+"CAPTCHA.0003" = "Informasi yang dimasukkan salah. Mohon coba kembali."; //弹框+验证码错误
+
+//Mark: - SMS
+"SMS.0002" = "";// 弹框
+"SMS.0003" = "Informasi yang dimasukkan salah. Mohon coba kembali."; //弹框+验证码错误
+
+"PROFILE.0106" = "";// 弹框
+"PROFILE.0112" = ""; //弹框

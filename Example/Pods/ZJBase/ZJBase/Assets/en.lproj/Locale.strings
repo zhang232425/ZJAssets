@@ -1,0 +1,11 @@
+/* 
+  Locale.strings
+  Pods
+
+  Created by Jercan on 2023/9/19.
+  
+*/
+
+"locationHint" = "Location permission is required. Please go to Settings and grant the permission";
+"cancel" = "Cancel";
+"yes" = "Yes";

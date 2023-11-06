@@ -20,14 +20,36 @@
   "source_files": "ZJBase/Classes/**/*",
   "resource_bundles": {
     "ZJBase": [
-      "ZJBase/Assets/*.png"
+      "ZJBase/Assets/**/*"
     ]
   },
+  "static_framework": true,
   "dependencies": {
+    "SnapKit": [
+
+    ],
     "RTRootNavigationController": [
 
     ],
     "ZJExtension": [
+
+    ],
+    "ZJLocalizable": [
+
+    ],
+    "ZJHUD": [
+
+    ],
+    "ZJRouter": [
+
+    ],
+    "ZJRoutableTargets": [
+
+    ],
+    "ZJLoginManager": [
+
+    ],
+    "ZJDevice": [
 
     ]
   }

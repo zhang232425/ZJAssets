@@ -15,6 +15,7 @@ class ZJAssetsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        config()
         setupViews()
     }
     
@@ -22,6 +23,12 @@ class ZJAssetsViewController: BaseViewController {
 }
 
 private extension ZJAssetsViewController {
+    
+    func config() {
+        
+        view.backgroundColor = .white
+        
+    }
     
     func setupViews() {
         

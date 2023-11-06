@@ -9,7 +9,7 @@ import Foundation
 
 extension Bundle {
     
-    static var framework_ASBase: Bundle {
+    static var framework_ZJBase: Bundle {
         let frameworkName = "ZJBase"
         let resourcePath: NSString = .init(string: Bundle(for: ZJBaseClass.self).resourcePath ?? "")
         let path = resourcePath.appendingPathComponent("/\(frameworkName).bundle")

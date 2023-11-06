@@ -1,0 +1,11 @@
+/* 
+  Locale.strings
+  Pods
+
+  Created by Jercan on 2023/9/19.
+  
+*/
+
+"locationHint" = "Izin lokasi diperlukan. Silakan buka Pengaturan dan berikan izin";
+"cancel" = "Batal";
+"yes" = "Ya";

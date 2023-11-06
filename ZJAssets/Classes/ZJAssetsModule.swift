@@ -19,11 +19,9 @@ public struct ZJAssetsModule: ZJModule {
         }
         
         ZJAssetsRoutableTarget.register(path: ZJAssetsRoutePath.orderDetail) {
-            
             let orderId = $0.parameters["orderId"] as! String
             let orderType = $0.parameters["orderType"] as! Int
             let productId = $0.parameters["productId"] as! String
-
             return ZJOrderDetailViewController()
         }
         

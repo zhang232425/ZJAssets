@@ -1,0 +1,6 @@
+framework module ZJValidator {
+  umbrella header "ZJValidator-umbrella.h"
+
+  export *
+  module * { export * }
+}

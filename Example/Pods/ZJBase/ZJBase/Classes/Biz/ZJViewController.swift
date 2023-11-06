@@ -25,7 +25,11 @@ open class ZJViewController: UIViewController {
         super.init(coder: coder)
         modalPresentationStyle = .fullScreen
     }
-
+    
+    public static func defaultBackImage() -> UIImage? {
+        UIImage(name: "back", bundle: .framework_ZJBase)
+    }
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
         rt_disableInteractivePop = false
@@ -42,7 +46,7 @@ open class ZJViewController: UIViewController {
 extension ZJViewController {
     
     open override func rt_customBackItem(withTarget target: Any!, action: Selector!) -> UIBarButtonItem! {
-        UIBarButtonItem(image: UIImage(name: "back", bundle: .framework_ASBase),
+        UIBarButtonItem(image: UIImage(name: "back", bundle: .framework_ZJBase),
                         style: .plain,
                         target: target,
                         action: action)

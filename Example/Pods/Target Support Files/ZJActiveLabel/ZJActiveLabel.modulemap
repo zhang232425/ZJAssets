@@ -1,0 +1,6 @@
+framework module ZJActiveLabel {
+  umbrella header "ZJActiveLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

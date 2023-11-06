@@ -12,6 +12,7 @@ public protocol AddTo {
 }
 
 public extension AddTo where Self: UIView {
+    @discardableResult
     func add(to superView: UIView) -> Self {
         superView.addSubview(self)
         return self

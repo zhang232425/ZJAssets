@@ -1,0 +1,118 @@
+/* 
+  RequestError.strings
+  Pods
+
+  Created by Jercan on 2022/10/19.
+  
+*/
+
+//MARK: - App 转码错误
+"APP.0001" = "System Error.";
+
+//MARK: - 网络错误
+"TimeOut" = "Request Timeout";
+
+//MARK: - System
+"SYSTEM.0001" = "Unknown Error Occurred.";
+"SYSTEM.0002" = "System has encountered an unexpected error.";
+"SYSTEM.0003" = "System has encountered an unexpected error.";
+"SYSTEM.0004" = "System Error.";
+"SYSTEM.0005" = "Internal exception.";
+"SYSTEM.0006" = "System error (0006).";
+"SYSTEM.0007" = "System Error (0007).";
+"SYSTEM.0008" = "System Error (0008).";
+"SYSTEM.0009" = "Operation request received. Please do not repeat operation.";
+"SYSTEM.0010" = "System error (0010).";
+"SYSTEM.0011" = "System error (0011).";
+"SYSTEM.0012" = "Login expired.";
+
+//MARK: - Profile
+"PROFILE.0001" = "Incorrect country code.";
+"PROFILE.0002" = "Verification code invalid/expired.";
+"PROFILE.0003" = "The phone number must be 10-13.";
+"PROFILE.0004" = "The phone number your entered has already been registered.";
+"PROFILE.0005" = "You have not set the password yet. Please go to set your password first.";
+"PROFILE.0006" = "Invalid password.";
+"PROFILE.0007" = "This phone number has not yet registered.";
+"PROFILE.0008" = "You have already set your password.";
+"PROFILE.0009" = "Account does not exist OR incorrect password.";
+"PROFILE.0010" = "You have not set your address yet. Go to set it now.";
+"PROFILE.0011" = "User status is not verify.";
+"PROFILE.0012" = "Password attempts exceed maximum limit.";
+"PROFILE.0013" = "Your account has not yet verified. Go to verify now.";
+
+//MARK: - HTTP
+"HTTP.0001" = "System error (0001).";
+"HTTP.0002" = "System error (0002).";
+
+//MARK: - Money
+"MONEY.0001" = "Insufficient balance,";
+"MONEY.0002" = "Frozen exception.";
+
+//MARK: - Product
+"PRODUCT.0001" = "Product expired.";
+"PRODUCT.0002" = "The amount you entered exceeds amount limit for each customer.";
+"PRODUCT.0003" = "You have already reached the limit of purchase times for this product.";
+"PRODUCT.0004" = "Incorrect purchase amount.";
+
+//MARK: - Register/Validation
+"REGISTER.0001" = "Frequent request for receiving verification code. Please try again later.";
+"REGISTER.0002" = "Verification code timeout.";
+"REGISTER.0003" = "Frequent request for receiving verification code. Please try again later.";
+"REGISTER.0004" = "Selected bank does not exist.";
+"REGISTER.0005" = "Invalid occupation.";
+"REGISTER.0006" = "Selected country does not exist.";
+"REGISTER.0007" = "Incorrect format of the photo you submitted.";
+"REGISTER.0008" = "Your identity verification is under reviewed. Please wait for the result.";
+"REGISTER.0009" = "Bank account holder does not match register name.";
+
+//Mark: - Withdraw
+"WITHDRAW.0001" = "Withdraw insufficient balance.";
+"WITHDRAW.0002" = "Withdraw exclude times limit.";
+"WITHDRAW.0003" = "Withdraw too low.";
+"WITHDRAW.0004" = "Bank code error.";
+"WITHDRAW.0005" = "Account name not match your register name.";
+"WITHDRAW.0006" = "The amount must be an integer.";
+
+//Mark: - Balance
+"BALANCE.0001" = "Balance not found.";
+
+//Mark: - Recharge
+"RECHARGE.0001" = "Recharge not found.";
+"RECHARGE.0002" = "Recharge pay method not found.";
+"RECHARGE.0003" = "Recharge bank code error.";
+"RECHARGE.0004" = "Recharge pay error.";
+"RECHARGE.0005" = "Recharge amount too low.";
+
+//Mark: - Api
+"API.0001" = "System error.";
+"API.0002" = "System error.";
+
+//Mark: - Bankcard
+"BANKCARD.0001" = "Bank account cannot be verified.";
+"BANKCARD.0002" = "Invalid bank account number.";
+
+//Mark: - Pay
+"PAY.0001" = "Payment invalid because of system error.";
+"PAY.0002" = "System Error. Please try again later.";
+
+//Mark: - Referrer
+"REFERRER.0001" = "You already applied referral code of this promo.";
+"REFERRER.0002" = "Incorrect Referral Code.";
+"REFERRER.0003" = "Exclusive to new users of this referral promo.";
+"REFERRER.0004" = "Please enter the referral code of your friend.";
+
+//Mark: - Usertask
+"USERTASK.0002" = "You have already received the reward";
+
+//Mark: - Captcha
+"CAPTCHA.0001" = ""; //弹框
+"CAPTCHA.0002" = "Sorry, for security reason, you are not able to proceed with the next step, please try again after 24 hours, please contact our customer service if any question!"; //无弹框 冻结24小时
+"CAPTCHA.0003" = "Verification code invalid/expired."; //弹框+验证码错误
+
+//Mark: - SMS
+"SMS.0002" = "";// 弹框
+"SMS.0003" =  "Verification code invalid/expired."; //弹框+验证码错误
+
+"PROFILE.0106" = "";// 弹框
+"PROFILE.0112" = ""; //弹框

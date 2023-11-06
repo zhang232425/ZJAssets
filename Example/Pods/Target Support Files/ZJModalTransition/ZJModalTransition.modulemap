@@ -1,0 +1,6 @@
+framework module ZJModalTransition {
+  umbrella header "ZJModalTransition-umbrella.h"
+
+  export *
+  module * { export * }
+}

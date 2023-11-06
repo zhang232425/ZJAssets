@@ -1,0 +1,124 @@
+/* 
+  Locale.strings
+  Pods
+
+  Created by Jercan on 2023/9/12.
+  
+*/
+
+/// 注册
+"register" = "Register";
+"enterPhoneNumer" = "Please enter your phone number";
+"enterVerficationCode" = "Please enter the verification code";
+"send" = "Send";
+"resend" = "Resend";
+"next" = "Next";
+"tncLendingBorrowing" = "TNC Lending and Borrowing Asetku";
+"privacyPolicy" = "Asetku Privacy Policy";
+"agreementDescription" = "I have read and agree to %@ and %@";
+
+"phoneCountError" = "The phone number must be 10-13 numbers";
+"phonePrefixError" = "Mobile number must start with 08";
+
+"captchaEmpty" = "Please enter the verification code.";
+"agreementEmpty" = "Please make sure you have read and agree to TnC Lending and Borrowing AsetKu and Asetku Privacy Policy.";
+"enterReferralCode" = "Please enter the invitation code";
+"makeSureApprovedTerms" = "Please make sure you have read and approved the terms and regulations";
+"accountAlreadyExists" = "The account %@ is already exists, please log in directly.";
+
+"passwordPlaceholder" = "Enter login password";
+"confirm" = "Confirm";
+
+// 设置密码
+"setLoginPassword" = "Set login password";
+"usePasswordLoginLater" = "You can log in with your phone number and password later";
+"skip" = "Skip";
+"enterPassword" = "Please enter 8-16 digits password";
+"passwordFormatError" = "The format of the password you set is incorrect. Password must be 8-16 characters";
+"setPasswordSuccessfully" = "Set password successfully";
+"correctPasswordHint" = "Enter a password of 8-16 characters, including letters and numbers";
+"correctPasswordToast" = "Password must be 8-16 characters, including letters and numbers";
+"passwordTlaceholder" = "Enter login password";
+
+// MARK: - ReferralCodeEnter
+"referralCode" = "Referral Code";
+"referralCodeDescription" = "Enter the referral code of your friend, then both you and your friends will get discount coupons";
+"referralSkip" = "Skip";
+"submit" = "Submit";
+"referralEmpty" = "Please enter the referral code of your friend";
+"success" = "Successfully";
+
+/// 登录
+"login" = "Login";
+"loginNow" = "Login Now";
+
+//MARK: - 密码登录
+"loginWithPassword" = "Log In with Password";
+"welcomeToAsetku" = "Welcome to Asetku";
+"enterLoginPwd" = "Please enter your login password";
+"forgotPassword" = "Forgot Password";
+"loginWithCode" = "Log In with SMS";
+"accountNotExistOrPasswordWrong" = "Account does not exist or incorrect password";
+"loginSuccessful" = "Login Successful";
+"ok" = "OK";
+"accountFrozenNotice" = "Your Account has been disabled. If you have any questions, please contact customer service.";
+"accountFrozenPhonePrefix" = "Customer service phone number：";
+"iKnow" = "I already know";
+"phoneCopied" = "Phone number copied";
+"frozenTitle" = "Account isn’t Active";
+
+//MARK: - 指纹/人脸登录
+"touchLoginButtonTitle" = "Click for fingerprint login";
+"faceLoginButtonTitle" = "Click to login with Face ID";
+"switchLoginMethod" = "Switch login method";
+"gestureLoginButtonTitle" = "Login with Gesture Password";
+"passwordLoginButtonTitle" = "Login with Password";
+"gestureNotyetSetToast" = "You haven't set a gesture password yet, please login with the password";
+
+"passcodeNotSetToast" = "No password is set for the device, please turn on the password first";
+"biometryLockoutToast" = "Too many incorrect attempts, please try again later";
+"touchIdunavailableToast" = "Fingerprint is off. Please go to system settings to turn on fingerprint.";
+"faceIdunavailableToast" = "Face ID is off. Please go to the system settings to turn on Face ID.";
+"touchNotEnrolledToast" = "Fingerprint is off. Please go to system settings to turn on fingerprint.";
+"faceNotEnrolledToast" = "Face ID is off. Please go to the system settings to turn on Face ID.";
+"touchChangedToast" = "The fingerprint has changed, please use other login methods";
+"faceChangedToast" = "Face ID has changed. Please use another login method";
+"touchInvalidToast" = "The fingerprint is invalid, please use other login methods";
+"faceInvalidToast" = "Face ID is invalid. Please use another login method";
+"touchIdEvaluateReason" = "Put your finger on the device fingerprint recognition area to verify the fingerprint";
+"faceIdEvaluateReason" = "Please use Face ID to verify your identity";
+"evaluationFailToast" = "Verification failed, please try again";
+
+// MARK: - Gesture
+"set_password_gesture" = "Set Gesture Password";
+"set_password_login_gesture" = "Set a gesture password to login instantly.";
+"length_error_gesture" = "Password too short. At least 4 dots connected. ";
+"draw_again_gesture" = "Please draw your gesture password again";
+"try_agin_gesture" = "Gesture passwords do not match. Please try again.";
+"login_gesture" = "Gesture Password Login";
+"times_error_gesture" = "Incorrect Password. You can't login with gesture password if password incorrect for 4 more times.";
+"login_move_gesture" = "Login via login password.";
+"enable_gesture" = "Enable Gesture Password";
+"disable_gesture" = "Disable Gesture Password";
+"reset_gesture" = "Reset Gesture Password";
+"gesture_password_gesture" = "Gesture Password";
+"login_verify_gesture" = "Verify Login Password";
+"verify_gesture" = "Verify Gesture Password";
+"disable_move_gesture" = "You can only login via login password after you disable gesture password.";
+"disable_verify_gesture" = "We need to verify your login password to disable gesture password.";
+"enter_gesture" = "Please enter login password.";
+"submit_gesture" = "Submit";
+"enter_verify_gesture" = "Please enter your login password to verify your identity.";
+"login_remind_gesture" = "*You can login instantly after set a gesture password.";
+"login_reset_verify_gesture" = "We need to verify your login password to reset your gesture password.";
+"reset_verify_gesture" = "We need to verify your gesture password to reset your gesture password.";
+"max_times_error_gesture" = "Incorrect password attempts reached 5 times. Please try again after 24 hours.";
+"incorrect_gesture" = "Incorrect Password. Attempts left: %ld.";
+"disable_will_verify_gesture" = "We need to verify your gesture password to disable gesture password.";
+"login_enter_remind_gesture" = "Please enter your login password.";
+"enter_remind_gesture" = "Please enter your gesture password.";
+"skip_gesture" = "Skip";
+"success_gesture" = "Gesture password set successfully!";
+"hi_gesture" = "HI ! Smart Money Manager.";
+
+

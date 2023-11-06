@@ -15,5 +15,6 @@ target 'ZJAssets_Example' do
   pod 'ZJCommonView',        :git => 'git@github.com:zhang232425/ZJCommonView.git', :branch => 'main'
   pod 'ZJRefresh',           :git => 'git@github.com:zhang232425/ZJRefresh.git', :branch => 'main'
   pod 'ZJCommonDefines',     :git => 'git@github.com:zhang232425/ZJCommonDefines.git', :branch => 'main'
+  pod 'ZJLogin',             :git => 'git@github.com:zhang232425/ZJLogin.git', :branch => 'main'
   
 end

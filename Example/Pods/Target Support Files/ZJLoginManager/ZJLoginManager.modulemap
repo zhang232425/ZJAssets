@@ -1,0 +1,6 @@
+framework module ZJLoginManager {
+  umbrella header "ZJLoginManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
