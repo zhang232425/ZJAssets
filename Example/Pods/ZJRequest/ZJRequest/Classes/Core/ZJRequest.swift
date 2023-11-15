@@ -87,6 +87,7 @@ extension ZJRequest {
         var moyaPlugins = plugins
         
         moyaPlugins.append(ZJRequestPlugin())
+        moyaPlugins.append(ZJRequestPrintPlugin())
         
         return MoyaProvider<T>(stubClosure: { _ in behavior },
                                callbackQueue: callbackQueue,

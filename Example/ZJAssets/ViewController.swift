@@ -8,6 +8,7 @@
 
 import UIKit
 import ZJRoutableTargets
+import ZJBase
 
 class ViewController: UIViewController {
 
@@ -19,7 +20,7 @@ class ViewController: UIViewController {
     @IBAction func assetClick() {
         
         if let vc = ZJAssetsRoutableTarget.assets.viewController {
-            present(vc, animated: true)
+            present(ZJNavigationController(rootViewController: vc), animated: true)
         }
         
     }
@@ -27,7 +28,7 @@ class ViewController: UIViewController {
     @IBAction func loginClick() {
         
         if let vc = ZJLoginRoutableTarget.login.viewController {
-            present(vc, animated: true)
+            present(ZJNavigationController(rootViewController: vc), animated: true)
         }
         
     }

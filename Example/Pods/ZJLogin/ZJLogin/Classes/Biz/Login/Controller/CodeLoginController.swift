@@ -53,7 +53,7 @@ private extension CodeLoginController {
     func setupViews() {
         
         containerView.add(to: view).snp.makeConstraints {
-            $0.width.edges.equalToSuperview()
+            $0.edges.equalToSafeArea(of: view)
         }
         
         ojkLogoView.add(to: view).snp.makeConstraints {

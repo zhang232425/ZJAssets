@@ -5,3 +5,12 @@
   Created by Jercan on 2023/9/5.
   
 */
+
+"unpayOrderTip" = "You have %@ unpaid order. Please check";
+"unpayOrdersTip" = "You have %@ unpaid orders. Please check";
+
+"assets" = "Assets";
+"totalAsset" = "Total Assets";
+"yestdayIncome" = "Yesterday's Earnings";
+"totalIncome" = "Total Earnings";
+

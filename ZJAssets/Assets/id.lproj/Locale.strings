@@ -5,3 +5,11 @@
   Created by Jercan on 2023/9/5.
   
 */
+
+"unpayOrderTip" = "Anda memiliki %@ pesanan belum dibayar. Lihat sekarang";
+"unpayOrdersTip" = "Anda memiliki %@ pesanan belum dibayar. Lihat sekarang";
+
+"assets" = "Portofolio";
+"totalAsset" = "Total Aset";
+"yestdayIncome" = "Penghasilan Kemarin";
+"totalIncome" = "Akumulasi Penghasilan";

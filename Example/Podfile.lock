@@ -93,6 +93,7 @@ PODS:
   - ZJExtension (0.1.0):
     - CryptoSwift
     - SDWebImage
+    - SnapKit
   - ZJHUD (0.1.0):
     - NVActivityIndicatorView
     - SnapKit
@@ -229,7 +230,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ZJBase:
-    :commit: 88d9cec27b7285c5ca636b004eb41f5e28b592e7
+    :commit: 42c3e00d4ea93229339ef3409deedc67889ce621
     :git: "git@github.com:zhang232425/ZJBase.git"
   ZJCommonDefines:
     :commit: 4d9ba68728ed9fb171e7e72825ad8a67d12b34c4
@@ -238,7 +239,7 @@ CHECKOUT OPTIONS:
     :commit: 0b20bf4f5ebd405ef886b5b4e9356be478a1cd8f
     :git: "git@github.com:zhang232425/ZJCommonView.git"
   ZJExtension:
-    :commit: 6d20ce67b858442ec5cbf537fc6e403b657bd052
+    :commit: 313cb2b3f18599a312eb50476e1e1636400ef9af
     :git: "git@github.com:zhang232425/ZJExtension.git"
   ZJLogin:
     :commit: 991061ae981055eec598b8fca6f571ab086548e8
@@ -281,7 +282,7 @@ SPEC CHECKSUMS:
   ZJCommonDefines: 9fd1e19aafb99bc9014e54e665520bb95aa5a22c
   ZJCommonView: e62b96fa97474a99971531e70e5e90c749d90629
   ZJDevice: bfc36b209a264aa5b877a733c6a7cffa856038db
-  ZJExtension: 696a53ccf69ba7171693e4c370d2672a62a4dfd9
+  ZJExtension: 227faf8dfbd3562eaa7cd9120f41d44bf2b59258
   ZJHUD: d5ca2144a62af4331f7f58386f5e4fbc5f5b2d01
   ZJKeychain: 056dd2cf24a6d44cb41677290742fe46cac94d39
   ZJLocalAuth: f6c3dea981bd77ff858f928c19e67ae0973d9236
