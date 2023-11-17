@@ -16,6 +16,8 @@ enum API {
     case assetsExtraInfo
     /// 我的资产 - 月收益走势
     case chartInfo
+    /// 续投金额校验
+    case investCheck
 }
 
 extension API: ZJRequestTargetType {
@@ -30,6 +32,8 @@ extension API: ZJRequestTargetType {
             return "/biz/order/all/order/assets/detail/new"
         case .chartInfo:
             return "/biz/order/all/order/monthlyIncommeTrend"
+        case .investCheck:
+            return "/order/continue/verify"
         }
     }
     
@@ -41,6 +45,8 @@ extension API: ZJRequestTargetType {
             return .get
         case .chartInfo:
             return .get
+        case .investCheck:
+            return .post
         }
     }
     
@@ -51,6 +57,8 @@ extension API: ZJRequestTargetType {
         case .assetsExtraInfo:
             return .requestPlain
         case .chartInfo:
+            return .requestPlain
+        case .investCheck:
             return .requestPlain
         }
     }

@@ -42,6 +42,12 @@ class ZJAssetsViewController: BaseScrollViewController {
     
     private lazy var headerView = AssetsHeaderView()
     
+    private var bubbleView: AssetsBubbleView?
+    
+    private var progressView: AssetsProgressView?
+    
+    private var noSignalView: ZJNoSignalView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         config()
@@ -49,7 +55,11 @@ class ZJAssetsViewController: BaseScrollViewController {
         bindViewModel()
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
 }
 
 private extension ZJAssetsViewController {
@@ -63,13 +73,13 @@ private extension ZJAssetsViewController {
     func setupViews() {
         
         barContainerView.add(to: view).snp.makeConstraints {
-            $0.left.top.right.equalToSuperview()
+            $0.top.left.right.equalToSuperview()
         }
         
         naviBar.add(to: barContainerView).snp.makeConstraints {
             $0.top.equalToSafeArea(of: barContainerView)
             $0.left.right.bottom.equalToSuperview()
-            $0.height.equalTo(44)
+            $0.height.equalTo(44.auto)
         }
         
         contentView.backgroundColor = .clear
@@ -86,6 +96,7 @@ private extension ZJAssetsViewController {
             $0.alwaysBounceVertical = true
             $0.showsVerticalScrollIndicator = false
         }.snp.remakeConstraints {
+            $0.top.equalTo(barContainerView.snp.bottom)
             if #available(iOS 11.0, *) {
                 $0.left.right.bottom.equalTo(view.safeAreaLayoutGuide)
             } else {
@@ -100,9 +111,43 @@ private extension ZJAssetsViewController {
     
     func bindViewModel() {
         
-        viewModel.fetchAction.elements.unwrap()
+        viewModel.isMonthReportHidden.bind(to: naviBar.reportButton.rx.isHidden).disposed(by: disposeBag)
+        
+        viewModel.hasProcessOrder.not().bind(to: naviBar.processPointView.rx.isHidden).disposed(by: disposeBag)
+        
+        Observable.merge(viewModel.fetchAction.errors,
+                         viewModel.refreshAction.errors,
+                         viewModel.investCheckAction.errors)
+        .subscribeNext(weak: self, ZJAssetsViewController.doError)
+        .disposed(by: disposeBag)
+        
+        viewModel.fetchAction.errors.map { _ in }.delay(.milliseconds(300), scheduler: MainScheduler.instance)
+            .subscribeNext(weak: self, ZJAssetsViewController.showNoSignalView)
+            .disposed(by: disposeBag)
+        
+        viewModel.investCheckAction.executing
+            .subscribeNext(weak: self, ZJAssetsViewController.doProgress)
+            .disposed(by: disposeBag)
+        
+        viewModel.fetchAction.executing
+            .subscribeNext(weak: self, ZJAssetsViewController.doFetchProgress)
+            .disposed(by: disposeBag)
+        
+        Observable.merge(viewModel.fetchAction.elements,
+                         viewModel.refreshAction.elements).unwrap()
             .subscribeNext(weak: self, ZJAssetsViewController.refreshUI)
             .disposed(by: disposeBag)
+        
+        NotificationCenter.default.rx.notification(UserDefaults.secureTextStateDidChange)
+            .map { $0.object as? Bool }
+            .unwrap().bind(to: viewModel.isSecureText)
+            .disposed(by: disposeBag)
+        
+        scrollView.rx.contentOffset.map { $0.y }.subscribe(onNext: { [weak self] in
+            self?.backgroundView.adjustPositionBy(offsetY: $0)
+        }).disposed(by: disposeBag)
+        
+        viewModel.datas.subscribeNext(weak: self, ZJAssetsViewController.buildSections).disposed(by: disposeBag)
         
         viewModel.fetchAction.execute()
         
@@ -110,7 +155,48 @@ private extension ZJAssetsViewController {
     
     func addBubbleViewIfNeeded() {
         
+        guard !UserDefaults.standard.isDisplayAssetsBubble else {
+            return
+        }
         
+        UserDefaults.standard.isDisplayAssetsBubble = true
+        
+        AssetsBubbleView().add(to: view).then {
+            bubbleView = $0
+        }.snp.makeConstraints {
+            $0.left.greaterThanOrEqualToSuperview()
+            $0.top.equalTo(barContainerView.snp.bottom)
+            $0.right.equalToSuperview().inset(10.auto)
+        }
+        
+    }
+
+    func buildSections(_ items: [AssetsViewModel.SectionItem]) {
+        
+        removeAllArrangedSubview()
+        
+        items.forEach {
+            
+            switch $0 {
+            case .assets(let info, let secureAction, let unpayAction):
+                headerView.info = info
+                headerView.secureClickAction = secureAction
+                headerView.unpayClickAction = unpayAction
+                addArrangedSubview(headerView)
+            case .balance(let info, let clickAction):
+                addArrangedSubview(createBalanceView(info: info, action: clickAction))
+            case .hold(let info, let clickHandler):
+                addArrangedSubview(createHoldView(info: info, clickHandler: clickHandler))
+            case .chart:
+                //addArrangedSubview(AssetsChartView().then { $0.infos = info })
+                break
+            case .insure(let info, let handler):
+                addArrangedSubview(createInsureView(info: info, handler: handler))
+            case .separator(let height):
+                addArrangedSubview(createSeparatorView(height: height))
+            }
+            
+        }
         
     }
     
@@ -133,8 +219,130 @@ private extension ZJAssetsViewController {
         naviBar.style = level.navigationBarStyle
         naviBar.title = viewModel.navigationTitle
         
-//        bubbleView?.refreshText()
+        bubbleView?.refreshText()
         
     }
+    
+    func showNoSignalView(_ :()) {
+        
+        let errorView = noSignalView ?? ZJNoSignalView()
+        
+        errorView.removeFromSuperview()
+        
+        errorView.add(to: view).then {
+            $0.refreshAction = { [weak self] in
+                self?.viewModel.fetchAction.execute()
+            }
+            noSignalView = $0
+        }.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+        
+    }
+    
+    func doFetchProgress(_ executing: Bool) {
+        
+        view.endEditing(true)
+        
+        noSignalView?.removeFromSuperview()
+        
+        if executing {
+            
+            progressView?.removeFromSuperview()
+            
+            let progress = AssetsProgressView()
+            
+            progress.add(to: view).then {
+                $0.title = viewModel.navigationTitle
+                progressView = $0
+            }.snp.makeConstraints {
+                $0.top.equalToSuperview()
+                if #available(iOS 11.0, *) {
+                    $0.left.right.bottom.equalTo(view.safeAreaLayoutGuide)
+                } else {
+                    $0.left.right.equalToSuperview()
+                    $0.bottom.equalTo(bottomLayoutGuide.snp.top)
+                }
+            }
+            
+        } else {
+            
+            progressView?.removeFromSuperview()
+            progressView = nil
+            
+        }
+        
+    }
+    
+    
+}
+
+private extension ZJAssetsViewController {
+    
+    func createBalanceView(info: AssetsBalanceInfo, action: (() -> ())?) -> UIView {
+        
+        let view = UIView()
+        
+        AssetsBalanceView().add(to: view).then {
+            $0.info = info
+            $0.clickAction = action
+        }.snp.makeConstraints {
+            $0.edges.equalToSuperview().inset(16.auto)
+        }
+        
+        return view
+        
+    }
+    
+    func createHoldView(info: AssetsHoldInfo, clickHandler: ((AssetsInfo.AssetsType) -> ())?) -> UIView {
+        
+        let view = UIView()
+        
+        AssetsHoldView().add(to: view).then {
+            $0.info = info
+            $0.clickHandler = clickHandler
+        }.snp.makeConstraints {
+            $0.top.equalToSuperview()
+            $0.left.right.equalToSuperview().inset(16.auto)
+            $0.bottom.equalToSuperview().inset(28.auto)
+        }
+        
+        return view
+        
+    }
+
+    func createInsureView(info: InsureInfo?, handler: (() -> ())?) -> UIView {
+        
+        let view = UIView()
+        
+        AssetsInsureView().add(to: view).then {
+            $0.info = info
+            $0.clickHandler = handler
+        }.snp.makeConstraints {
+            $0.top.equalToSuperview()
+            $0.left.right.equalToSuperview().inset(16.auto)
+            $0.bottom.equalToSuperview().inset(30.auto)
+        }
+        
+        return view
+    }
+    
+
+    func createSeparatorView(height: CGFloat) -> UIView {
+        
+        let separatorView = UIView()
+        separatorView.backgroundColor = .clear
+        
+        UIView().add(to: separatorView).then {
+            $0.backgroundColor = .clear
+        }.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+            $0.height.equalTo(height)
+        }
+        
+        return separatorView
+        
+    }
+    
     
 }

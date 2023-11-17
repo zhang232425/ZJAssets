@@ -61,7 +61,7 @@ class BaseScrollViewController: ZJScrollViewController {
     
     private func layoutContentView() {
         
-        contentView.add(to: view).snp.makeConstraints {
+        contentView.add(to: scrollView).snp.makeConstraints {
             $0.width.edges.equalToSuperview()
         }
         

@@ -9,9 +9,10 @@ import UIKit
 
 open class ZJScrollViewController: ZJViewController {
     
-    public private(set) final var scrollView = UIScrollView()
-
-    open override func viewDidLoad() {
+    public private(set) final lazy var scrollView = UIScrollView()
+    
+    override open func viewDidLoad() {
+        
         super.viewDidLoad()
         
         automaticallyAdjustsScrollViewInsets = false
@@ -36,5 +37,5 @@ open class ZJScrollViewController: ZJViewController {
         }
         
     }
-
+    
 }

@@ -6,11 +6,126 @@
   
 */
 
-"unpayOrderTip" = "You have %@ unpaid order. Please check";
-"unpayOrdersTip" = "You have %@ unpaid orders. Please check";
-
 "assets" = "Assets";
-"totalAsset" = "Total Assets";
-"yestdayIncome" = "Yesterday's Earnings";
-"totalIncome" = "Total Earnings";
+"total_asset" = "Total Assets";
+"yestday_income" = "Yesterday's Earnings";
+"total_income" = "Total Earnings";
+"unpaid_order_tip" = "You have %@ unpaid order. Please check";
+"unpaid_orders_tip" = "You have %@ unpaid orders. Please check";
+"balance" = "Balance";
+"continue_fund" = "Continue Funding";
+"p2p_regular" = "P2P Regular";
+"chart_title" = "Daily Earning Chart";
+"insure_title" = "My Family Insurance";
+"insure_tip" = "Click to buy an insurance for your family >>";
+"insure_number" = "";
+"family_member" = "Family Member";
+"policy_number" = "";
+"family_policy" = "Family Policy";
+
+"total_amount" = "Total Amount";
+"total_amount_cell" = "Maturity Amount";
+"total_earning" = "Total Earnings";
+"payment_amount" = "Payment Amount";
+"payment_tip" = "VA is generated after the borrower completes signature";
+"complete_sign_tip" = "You have to complete e-signature to pay. Please sign ASAP";
+"estimated_wait_time" = "Estimated wait time %@";
+"remaining_time" = "Remaining Time";
+"earning_detail" = "Earnings Details";
+"income_bottom_tip" = "-Only show orders after 2020-";
+"transaction_history" = "Transaction History";
+"due_date" = "Due Date";
+"auto_fund" = "Auto Funding";
+"turn_on" = "Turn On";
+"fund_day_tip" = "Auto Funding after %@ days";
+"on" = "On";
+"no_data" = "No Data";
+"go_product" = "Check Out Regular Products";
+"sign_order_tip" = "You have %@ order to be signed. To view now";
+"sign_orders_tip" = "You have %@ orders to be signed. To view now";
+"appoint_order_tip" = "You have %@ booking order pending confirmation";
+"appoint_orders_tip" = "You have %@ booking orders pending confirmation";
+"go" = "Go";
+"sign_title" = "Pending signature list";
+"product_name" = "Product Name";
+
+"transaction_record" = "Transaction";
+"processing" = "Processing";
+"history" = "History";
+"last_month" = "Last Month";
+"last_3_month" = "Last 3 Months";
+"last_year" = "Last 1 Year";
+"filter" = "Filter";
+"all" = "All";
+"product_type" = "Product Type";
+"trade_type" = "Transaction Type";
+"old_history" = "Previous Transaction Records";
+"transaction_time" = "Transaction Time";
+"custom" = "Custom";
+"no_more" = "-no more-";
+"trade_icon_tip" = "Check transaction records here";
+"trade_old_tip" = "Check historical transaction records here";
+"booking_history" = "Booking History";
+
+"insured" = "Insured";
+"insured_des" = "Since the borrower has not fully repaid the loan at the maturity date, the status of the funding order is temporarily not repaid yet. If the loan is not settled within 90 days of the maturity date, the insurance will cover your principal and earnings and compensate you for the maturity amount stated in the order.";
+
+"ok" = "OK";
+
+"maturity_amount" = "Maturity Amount";
+"after_tax" = "After Tax";
+"principal" = "Principal";
+"expected_earnings" = "Expected Earnings";
+"maturity_date" = "Maturity Date";
+"maturity_date_one" = "Payment Date";
+"actual_earnings" = "Total Actual Earnings";
+"funding_principal" = "Total Principal";
+"early_repayment" = "Early Repayment";
+"more" = "More";
+"repaid" = "Latest Repayment";
+"interestRate" = "Interest Rate";
+"earnings" = "Earnings";
+"totalEarnings" = "Total Earned";
+
+// MARK: - OrderDetailHint
+"maturity_amount_hint_title" = "Maturity Amount (After Tax)";
+"maturity_amount_hint_subtitle" = "refers to the total principal due plus 30-day interest to be received based on the settlement on the maturity date (after tax)";
+"maturity_amount_hint_one" = "Maturity Amount (After Tax) = Principal + Interest - Tax.";
+"maturity_amount_hint_two" = "Interest = Principal x Loan Interest Rate.";
+"maturity_amount_hint_three" = "Tax= [Principal x (Loan Interest Rate - Insurance Rate) + Earnings from Coupon] x Tax Rate.";
+
+"expected_earnings_hint_title" = "Expected Earnings";
+"expected_earnings_hint_subtitle" = "refers to the expected 30-day earnings on the principal due";
+"expected_earnings_hint_desc" = "Expected Earnings = Principal x Loan Interest Rate";
+
+"maturity_amount_repaid_hint_title" = "Payment Amount"; //  (After Tax)
+"maturity_amount_repaid_hint_subtitle" = "refers to the total repaid principal plus interest (after tax)";
+"maturity_amount_repaid_hint_one" = "Payment Amount (After Tax) = Principal + Interest - Tax.";
+"maturity_amount_repaid_hint_two" = "Interest = [Repaid Principal x (Loan Interest Rate - Insurance Rate) x (Interest-accruing Days / Tenor)] + (Repaid Principal x Insurance Rate).";
+"maturity_amount_repaid_hint_three" = "Tax=[Repaid Principal x (Loan Interest Rate - Insurance Rate) x (Interest-accruing Days / Tenor) + Earnings from Coupon ]x Tax Rate.";
+
+"earnings_hint_title" = "Earnings";
+"earnings_hint_subtitle" = "refer to the earnings from the repaid principal, where the interest rate (Loan Interest Rate - Insurance Rate) is calculated according to the number of interest-accruing days";
+"earnings_hint_desc" = "Earnings = [Repaid Principal x (Loan Interest Rate - Insurance Rate) x Interest-accruing Days / Tenor] + (Repaid Principal * Insurance Rate)";
+
+"total_actual_earnings_hint_title" = "Total Earned";
+"total_actual_earnings_hint_subtitle" = "refers to the total earnings from the repaid principal";
+
+"remainPlanTitle" = "Ongoing Funding";
+
+
+// 预期订单优化2.0
+"overdue" = "Tertunggak";
+"total_maturity_amount" = "Total Maturity Amount";
+"total_tax" = "Total Tax";
+
+//Empty
+"no_product" = "New products are working hard to update, please be patient.";
+"no_signal" = "No signal yet";
+"no_expiredOrder" = "No expired orders yet...";
+"no_records" = "No records";
+"no_records_for_period" = "No records for the period";
+"no_regular_order" = "There's no order right now. Get your order!";
+"no_regular_order_button" = "Check Now";
+"refresh" = "Refresh";
 

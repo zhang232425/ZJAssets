@@ -36,7 +36,7 @@ class AssetsNavigationBar: BaseView {
         $0.textColor = style.textColor
     }
 
-    private lazy var reportButton = UIButton(type: .custom).then {
+    private(set) lazy var reportButton = UIButton(type: .custom).then {
         $0.addTarget(self, action: #selector(handleButtonClick), for: .touchUpInside)
         $0.setImage(.named(style.reportIcon), for: .normal)
     }
@@ -46,7 +46,7 @@ class AssetsNavigationBar: BaseView {
         $0.setImage(.named(style.recordIcon), for: .normal)
     }
     
-    private lazy var processPointView = UIView().then {
+    private(set) lazy var processPointView = UIView().then {
         $0.layer.cornerRadius = 4
         $0.backgroundColor = UIColor(hexString: "#F13319")
     }

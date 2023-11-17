@@ -20,6 +20,17 @@ final class AssetsViewModel {
         case insure(info: InsureInfo?, clickAction: () -> ())
         case separator(CGFloat)
     }
+
+    enum NavigationStep {
+        case monthReport
+        case renewInvest(NSNumber)
+        case insure(URL)
+        case deposit
+        case flex
+        case fund
+        case gold
+        case transaction
+    }
     
     var navigationTitle: String { Locale.assets.localized }
     
@@ -32,6 +43,8 @@ final class AssetsViewModel {
     let isSecureText = BehaviorRelay(value: UserDefaults.standard.isSecureText)
     
     let datas = BehaviorRelay(value: [SectionItem]())
+
+    let nextStep = BehaviorRelay<NavigationStep?>(value: nil)
     
     private(set) lazy var fetchAction: Action<(), VipLevel?> = .init { [weak self] in
         self?.fetchData() ?? .just(nil)
@@ -40,6 +53,11 @@ final class AssetsViewModel {
     private(set) lazy var refreshAction: Action<(), VipLevel?> = .init { [weak self] in
         self?.fetchData() ?? .just(nil)
     }
+
+    private(set) lazy var investCheckAction: Action<(), ()> = .init { [weak self] in
+        Request.investCheck().map { self?.refreshBalanceItem(balance: $0) }
+    }
+    
     
 }
 
@@ -103,10 +121,42 @@ private extension AssetsViewModel {
         
     }
     
+    func refreshBalanceItem(balance: NSNumber?) {
+        
+        guard let balance = balance else { return }
+        
+        var sections = datas.value
+        
+        for (idx, item) in sections.enumerated() {
+            
+            if case .balance(let info, let clickAction) = item {
+                
+                sections.remove(at: idx)
+                
+                let newInfo = AssetsBalanceInfo(rate: info.rate, balance: balance, isSecureText: info.isSecureText)
+                
+                sections.insert(.balance(info: newInfo, clickAction: clickAction), at: idx)
+                
+                break
+                
+            }
+            
+        }
+        
+        datas.accept(sections)
+        
+        if balance.intValue > 0 {
+            nextStep.accept(.renewInvest(balance))
+        }
+        
+    }
+    
     func handleSecureClick() {
+        
         var secure = UserDefaults.standard.isSecureText
         secure.toggle()
         UserDefaults.standard.isSecureText = secure
+    
     }
     
     func handleUnpayClick() {

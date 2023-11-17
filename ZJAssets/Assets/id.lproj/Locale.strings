@@ -6,10 +6,126 @@
   
 */
 
-"unpayOrderTip" = "Anda memiliki %@ pesanan belum dibayar. Lihat sekarang";
-"unpayOrdersTip" = "Anda memiliki %@ pesanan belum dibayar. Lihat sekarang";
-
 "assets" = "Portofolio";
-"totalAsset" = "Total Aset";
-"yestdayIncome" = "Penghasilan Kemarin";
-"totalIncome" = "Akumulasi Penghasilan";
+"total_asset" = "Total Aset";
+"yestday_income" = "Penghasilan Kemarin";
+"total_income" = "Akumulasi Penghasilan";
+"unpaid_order_tip" = "Anda memiliki %@ pesanan belum dibayar. Lihat sekarang";
+"unpaid_orders_tip" = "Anda memiliki %@ pesanan belum dibayar. Lihat sekarang";
+"balance" = "Saldo";
+"continue_fund" = "Lanjutkan Pendanaan";
+"p2p_regular" = "P2P Reguler";
+"chart_title" = "Grafik Tren Penghasilan Harian";
+"insure_title" = "Asuransi Keluarga Saya";
+"insure_tip" = "Klik tambahkan perlindungan untuk keluarga >>";
+"insure_number" = "Orang";
+"family_member" = "Anggota Keluarga";
+"policy_number" = "Polis";
+"family_policy" = "Polis Keluarga";
+
+"total_amount" = "Total Nominal";
+"total_amount_cell" = "Nominal Jatuh Tempo";
+"total_earning" = "Total Penghasilan";
+"payment_amount" = "Jumlah pembayaran";
+"payment_tip" = "VA dibuat setelah peminjam selesai tanda tangan";
+"complete_sign_tip" = "Anda perlu menyelesaikan e-signature untuk membayar. Harap segera tandatangan";
+"estimated_wait_time" = "Estimasi waktu tunggu %@";
+"remaining_time" = "Sisa Waktu";
+"earning_detail" = "Rincian Penghasilan";
+"income_bottom_tip" = "-Hanya tampilkan pesanan setelah 2020-";
+"transaction_history" = "Riwayat Transaksi";
+"due_date" = "Tanggal Jatuh Tempo";
+"auto_fund" = "Pendanaan Otomatis";
+"turn_on" = "Aktifkan";
+"fund_day_tip" = "Pendanaan Otomatis setelah %@ hari";
+"on" = "Aktif";
+"no_data" = "Tidak ada data saat ini";
+"go_product" = "Lihat Produk Reguler";
+"sign_order_tip" = "Anda memiliki %@ pesanan menunggu untuk ditandatangani. Lihat sekarang";
+"sign_orders_tip" = "Anda memiliki %@ pesanan menunggu untuk ditandatangani. Lihat sekarang";
+"appoint_order_tip" = "Anda ada %@ booking pesanan menunggu konfirmasi";
+"appoint_orders_tip" = "Anda ada %@ booking pesanan menunggu konfirmasi";
+"go" = "Go";
+"sign_title" = "Daftar Menunggu TTD";
+"product_name" = "Nama Produk";
+
+"transaction_record" = "Transaksi";
+"processing" = "Processing";
+"history" = "History";
+"last_month" = "Bulan Lalu";
+"last_3_month" = "3 Bln Terakhir";
+"last_year" = "1 Thn Terakhir";
+"filter" = "Filter";
+"all" = "Semua";
+"product_type" = "Jenis Produk";
+"trade_type" = "Jenis Transaksi";
+"old_history" = "Riwayat Transaksi Sebelumnya";
+"transaction_time" = "Waktu Transaksi";
+"custom" = "Sesuaikan";
+"no_more" = "-Tidak ada-";
+"trade_icon_tip" = "Klik untuk melihat transaksi";
+"trade_old_tip" = "Catatan transaksi sebelumnya ada di sini";
+"booking_history" = "Riwayat Booking";
+
+"insured" = "Terasuransi";
+"insured_des" = "Karena peminjam belum melunasi pinjaman pada tanggal jatuh tempo, status pesanan pendanaan untuk sementara belum dibayar kembali. Jika pinjaman tidak dilunasi dalam 90 hari sejak tanggal jatuh tempo, asuransi akan menanggung pokok dan penghasilan Anda serta memberi kompensasi untuk sebesar nominal jatuh tempo yang tercantum dalam pesanan.";
+"insured_des" = "Dana pokok pendanaan anda dilindungi asuransi. Apabila terjadi penunggakan melebihi 90 hari, AsetKu akan mengembalikan dana pokok yang terutang.";
+"ok" = "OK";
+
+"maturity_amount" = "Nominal Jatuh Tempo";
+"after_tax" = "Setelah Pajak";
+"principal" = "Pokok";
+"expected_earnings" = "Estimasi Penghasilan";
+"maturity_date" = "Tanggal Jatuh Tempo";
+"maturity_date_one" = "Tanggal Pembayaran";
+"actual_earnings" = "Total Penghasilan Aktual";
+"funding_principal" = "Total Pokok";
+"early_repayment" = "Pembayaran Kembali Dipercepat";
+"more" = "More";
+"repaid" = "Pembayaran Terbaru";
+"interestRate" = "Suku Bunga";
+"earnings" = "Penghasilan";
+"totalEarnings" = "Penghasilan Diterima";
+
+// MARK: - OrderDetailHint
+"maturity_amount_hint_title" = "Nominal Jatuh Tempo (Setelah Pajak)";
+"maturity_amount_hint_subtitle" = "adalah total dari pokok terutang ditambah bunga 30 hari yang akan diterima berdasarkan pelunasan pada tanggal jatuh tempo (setelah pajak)";
+"maturity_amount_hint_one" = "Nominal Jatuh Tempo (Setelah Pajak) = Pokok + Bunga - Pajak.";
+"maturity_amount_hint_two" = "Bunga= Pokok x Suku Bunga Pinjaman.";
+"maturity_amount_hint_three" = "Pajak =[Pokok x (Suku Bunga Pinjaman - Tarif Asuransi) + Penghasilan dari Kupon] x Tarif Pajak.";
+
+"expected_earnings_hint_title" = "Estimasi Penghasilan";
+"expected_earnings_hint_subtitle" = "adalah penghasilan 30 hari dari pokok terutang";
+"expected_earnings_hint_desc" = "Estimasi Penghasilan = Pokok x Suku Bunga Pinjaman";
+
+"maturity_amount_repaid_hint_title" = "Jumlah Pembayaran"; //  (Setelah Pajak)
+"maturity_amount_repaid_hint_subtitle" = "adalah total dari pokok yang dibayar kembali ditambah bunga (setelah pajak)";
+"maturity_amount_repaid_hint_one" = "Jumlah Pembayaran (Setelah Pajak) = Pokok + Bunga - Pajak";
+"maturity_amount_repaid_hint_two" = "Bunga = [Pokok yang Dibayar Kembali x (Suku Bunga Pinjaman - Tarif Asuransi) x Jumlah Hari Berbunga / Tenor]  + (Pokok yang Dibayar Kembali x Tarif Asuransi)";
+"maturity_amount_repaid_hint_three" = "Pajak=[(Pokok yang Dibayar Kembali x (Suku Bunga Pinjaman - Tarif Asuransi) x (Jumlah Hari Berbunga / Tenor) + Penghasilan dari Kupon)] x Tarif Pajak";
+
+"earnings_hint_title" = "Penghasilan";
+"earnings_hint_subtitle" = "adalah penghasilan dari pokok yang telah dibayar kembali, di mana suku bunga 1,2% (Suku Bunga Pinjaman - Tarif Asuransi) dihitung sesuai dengan jumlah hari berbunga";
+"earnings_hint_desc" = "Penghasilan = [Pokok yang Dibayar Kembali x (Suku Bunga Pinjaman - Tarif Asuransi) x Hari Berbunga / Tenor] + (Pokok yang Dibayar Kembali x Tarif Asuransi)";
+
+"total_actual_earnings_hint_title" = "Penghasilan Diterima";
+"total_actual_earnings_hint_subtitle" = "adalah total penghasilan dari pokok yang telah dibayar kembali";
+
+"remainPlanTitle" = "Pendanaan Berjalan";
+
+
+// 预期订单优化2.0
+"overdue" = "Overdue";
+"total_maturity_amount" = "Total Pembayaran";
+"total_tax" = "Total Pajak";
+
+//Empty
+"no_product" = "Kuota sedang diperbarui, mohon tunggu.";
+"no_signal" = "Tidak Ada Sinyal";
+"no_expiredOrder" = "Belum ada pesanan kedaluwarsa ...";
+"no_records" = "Tidak ada riwayat transaksi saat ini";
+"no_records_for_period" = "Tidak ada catatan untuk periode tersebut";
+"no_regular_order" = "Saat ini tidak ada pesanan. Buat pesanan sekarang!";
+"no_regular_order_button" = "Cek";
+"refresh" = "Coba Lagi";
+

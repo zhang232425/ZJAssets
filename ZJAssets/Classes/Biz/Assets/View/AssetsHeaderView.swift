@@ -14,6 +14,10 @@ class AssetsHeaderView: BaseView {
     // MARK: - Property
     private var bag = DisposeBag()
     
+    var secureClickAction: (() -> ())?
+    
+    var unpayClickAction: (() -> ())?
+    
     var info: AssetsHeaderInfo? {
         didSet {
             bag = DisposeBag()
@@ -132,15 +136,15 @@ class AssetsHeaderView: BaseView {
         earningLabel.add(to: containerView).snp.makeConstraints {
             $0.top.equalTo(amountLabel.snp.bottom).offset(16.auto)
             $0.left.equalToSuperview().inset(12.auto)
-            $0.right.equalTo(containerView.snp.centerY).offset(-6.auto)
+            $0.right.equalTo(containerView.snp.centerX).offset(-6.auto)
         }
-        
+    
         earningAmountLabel.add(to: containerView).snp.makeConstraints {
             $0.left.right.equalTo(earningLabel)
             $0.top.equalTo(earningLabel.snp.bottom).offset(4.auto)
             $0.bottom.equalToSuperview().inset(16.auto)
         }
-        
+    
         unpayView.add(to: unpayContainerView).snp.makeConstraints {
             $0.top.equalToSuperview().inset(10.auto)
             $0.left.bottom.right.equalToSuperview()
@@ -185,17 +189,17 @@ class AssetsHeaderView: BaseView {
 private extension AssetsHeaderView {
     
     @objc func buttonClick() {
-        
+        secureClickAction?()
     }
     
     @objc func unpayClick() {
-        
+        unpayClickAction?()
     }
     
     func updateText(_ isSecure: Bool) {
         if isSecure {
             amountLabel.text = info?.secureText
-            earningLabel.text = info?.secureText
+            earningAmountLabel.text = info?.secureText
             switch info?.vipLevel {
             case .sixth:
                 eyeButton.setImage(.named("icon_eye_close_vip6"), for: .normal)

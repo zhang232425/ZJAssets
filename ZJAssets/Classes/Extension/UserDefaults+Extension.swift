@@ -25,4 +25,15 @@ extension UserDefaults {
         
     }
     
+    var isDisplayAssetsBubble: Bool {
+        
+        set {
+            setValue(newValue, forKey: #function)
+            synchronize()
+        }
+        
+        get { bool(forKey: #function) }
+        
+    }
+    
 }

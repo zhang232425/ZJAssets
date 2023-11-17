@@ -1336,6 +1336,7 @@
 		46EB2E0000EA80 /* ZJLocalizable-ZJLocalizable in Resources */ = {isa = PBXBuildFile; fileRef = FD2B9CAB2A6596FC35F6B611E5F42FD6 /* ZJLocalizable-ZJLocalizable */; };
 		46EB2E0000EE50 /* ZJRegion-ZJRegion in Resources */ = {isa = PBXBuildFile; fileRef = 61706C52A722C7072ECE7CDEB5156231 /* ZJRegion-ZJRegion */; };
 		46EB2E0000EFE0 /* ZJValidator-ZJValidator in Resources */ = {isa = PBXBuildFile; fileRef = FA08430103907551C394D3F177B69783 /* ZJValidator-ZJValidator */; };
+		D64CD0D22B046AE200D28800 /* AssetsBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64CD0D12B046AE200D28800 /* AssetsBubbleView.swift */; };
 		D672731E2AFCE3500005F9B7 /* BaseScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D672731D2AFCE3500005F9B7 /* BaseScrollViewController.swift */; };
 		D68532A32B01CD2100F8B48B /* AssetsUnpayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68532A22B01CD2100F8B48B /* AssetsUnpayView.swift */; };
 		D68532A62B01FC0400F8B48B /* AssetsHeaderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68532A52B01FC0400F8B48B /* AssetsHeaderInfo.swift */; };
@@ -1347,6 +1348,11 @@
 		D68532B32B02392B00F8B48B /* AssetsBalanceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68532B22B02392B00F8B48B /* AssetsBalanceInfo.swift */; };
 		D68532B52B023A1000F8B48B /* AssetsHoldInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68532B42B023A1000F8B48B /* AssetsHoldInfo.swift */; };
 		D68532B72B023D1F00F8B48B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68532B62B023D1F00F8B48B /* Request.swift */; };
+		D69DD8D02B05FA0800B0EC06 /* AssetsBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69DD8CF2B05FA0800B0EC06 /* AssetsBalanceView.swift */; };
+		D69DD8D22B05FEE600B0EC06 /* AssetsHoldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69DD8D12B05FEE600B0EC06 /* AssetsHoldView.swift */; };
+		D69DD8D42B0603BA00B0EC06 /* AssetsInsureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69DD8D32B0603BA00B0EC06 /* AssetsInsureView.swift */; };
+		D69DD8D62B061B9D00B0EC06 /* ZJNoSignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69DD8D52B061B9D00B0EC06 /* ZJNoSignalView.swift */; };
+		D69DD8D82B06272100B0EC06 /* AssetsProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69DD8D72B06272100B0EC06 /* AssetsProgressView.swift */; };
 		D6DE71332AFDDD3C0056CB71 /* AssetsBackgroundHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DE71322AFDDD3C0056CB71 /* AssetsBackgroundHeaderView.swift */; };
 		D6DE71352AFE18A90056CB71 /* AssetsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DE71342AFE18A90056CB71 /* AssetsHeaderView.swift */; };
 		D6F271C92B031D7600843FD0 /* AssetsExtraInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F271C82B031D7600843FD0 /* AssetsExtraInfo.swift */; };
@@ -3978,6 +3984,7 @@
 		CD63405120225602F8DF676BC778C745 /* ZJRequest-ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ZJRequest-ZJRequest"; path = ZJRequest.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28763E37EDD385B2F7D6DE39F447784 /* ZJLocalizable */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJLocalizable; path = ZJLocalizable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51C3D0C53D23B97B032E3BDD4F82C82 /* Differentiator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Differentiator; path = Differentiator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64CD0D12B046AE200D28800 /* AssetsBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsBubbleView.swift; sourceTree = "<group>"; };
 		D672731D2AFCE3500005F9B7 /* BaseScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScrollViewController.swift; sourceTree = "<group>"; };
 		D68532A22B01CD2100F8B48B /* AssetsUnpayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsUnpayView.swift; sourceTree = "<group>"; };
 		D68532A52B01FC0400F8B48B /* AssetsHeaderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsHeaderInfo.swift; sourceTree = "<group>"; };
@@ -3989,6 +3996,11 @@
 		D68532B22B02392B00F8B48B /* AssetsBalanceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsBalanceInfo.swift; sourceTree = "<group>"; };
 		D68532B42B023A1000F8B48B /* AssetsHoldInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsHoldInfo.swift; sourceTree = "<group>"; };
 		D68532B62B023D1F00F8B48B /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		D69DD8CF2B05FA0800B0EC06 /* AssetsBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsBalanceView.swift; sourceTree = "<group>"; };
+		D69DD8D12B05FEE600B0EC06 /* AssetsHoldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsHoldView.swift; sourceTree = "<group>"; };
+		D69DD8D32B0603BA00B0EC06 /* AssetsInsureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsInsureView.swift; sourceTree = "<group>"; };
+		D69DD8D52B061B9D00B0EC06 /* ZJNoSignalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJNoSignalView.swift; sourceTree = "<group>"; };
+		D69DD8D72B06272100B0EC06 /* AssetsProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsProgressView.swift; sourceTree = "<group>"; };
 		D6DE71322AFDDD3C0056CB71 /* AssetsBackgroundHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsBackgroundHeaderView.swift; sourceTree = "<group>"; };
 		D6DE71342AFE18A90056CB71 /* AssetsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsHeaderView.swift; sourceTree = "<group>"; };
 		D6F271C82B031D7600843FD0 /* AssetsExtraInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsExtraInfo.swift; sourceTree = "<group>"; };
@@ -6286,6 +6298,12 @@
 				D6DE71322AFDDD3C0056CB71 /* AssetsBackgroundHeaderView.swift */,
 				D6DE71342AFE18A90056CB71 /* AssetsHeaderView.swift */,
 				D68532A22B01CD2100F8B48B /* AssetsUnpayView.swift */,
+				D64CD0D12B046AE200D28800 /* AssetsBubbleView.swift */,
+				D69DD8CF2B05FA0800B0EC06 /* AssetsBalanceView.swift */,
+				D69DD8D12B05FEE600B0EC06 /* AssetsHoldView.swift */,
+				D69DD8D32B0603BA00B0EC06 /* AssetsInsureView.swift */,
+				D69DD8D52B061B9D00B0EC06 /* ZJNoSignalView.swift */,
+				D69DD8D72B06272100B0EC06 /* AssetsProgressView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -10562,10 +10580,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				46EB2E0000B1E0 /* API.swift in Sources */,
+				D64CD0D22B046AE200D28800 /* AssetsBubbleView.swift in Sources */,
 				D68532AE2B021DCF00F8B48B /* NSNumber+Extension.swift in Sources */,
 				D68532A82B01FC3C00F8B48B /* AssetsSecureProtocol.swift in Sources */,
 				D6F271C92B031D7600843FD0 /* AssetsExtraInfo.swift in Sources */,
 				46EB2E0000B180 /* AssetsNavigationBar.swift in Sources */,
+				D69DD8D02B05FA0800B0EC06 /* AssetsBalanceView.swift in Sources */,
+				D69DD8D62B061B9D00B0EC06 /* ZJNoSignalView.swift in Sources */,
 				46EB2E0000B1D0 /* BaseView.swift in Sources */,
 				D68532AA2B02087200F8B48B /* AssetsBaseInfo.swift in Sources */,
 				46EB2E0000B1C0 /* BaseViewController.swift in Sources */,
@@ -10580,13 +10601,16 @@
 				D68532AC2B0212A000F8B48B /* Locale.swift in Sources */,
 				D6DE71352AFE18A90056CB71 /* AssetsHeaderView.swift in Sources */,
 				D672731E2AFCE3500005F9B7 /* BaseScrollViewController.swift in Sources */,
+				D69DD8D82B06272100B0EC06 /* AssetsProgressView.swift in Sources */,
 				D68532B12B02314F00F8B48B /* AssetsViewModel.swift in Sources */,
 				46EB2E0000B280 /* ZJAssets-dummy.m in Sources */,
 				46EB2E0000B1F0 /* ZJAssetsModule.swift in Sources */,
 				D6F271CD2B03653D00843FD0 /* UserDefaults+Extension.swift in Sources */,
+				D69DD8D22B05FEE600B0EC06 /* AssetsHoldView.swift in Sources */,
 				46EB2E0000B170 /* ZJAssetsViewController.swift in Sources */,
 				46EB2E0000B190 /* ZJOrderDetailViewController.swift in Sources */,
 				D6F271CB2B03494700843FD0 /* ChartInfo.swift in Sources */,
+				D69DD8D42B0603BA00B0EC06 /* AssetsInsureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

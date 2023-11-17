@@ -41,6 +41,15 @@ struct Request {
             .map { $0.data?.items }
     }
     
+    /// 续投金额校验
+    static func investCheck() -> Observable<NSNumber?> {
+        API.investCheck.rx.request()
+            .ensureResponseStatus()
+            .mapObject(ZJRequestResult<NSNumber>.self)
+            .asObservable()
+            .map { $0.data }
+    }
+    
 }
 
 extension PrimitiveSequence where Trait == SingleTrait, Element == Moya.Response {
