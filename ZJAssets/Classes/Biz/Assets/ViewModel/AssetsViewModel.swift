@@ -168,6 +168,17 @@ private extension AssetsViewModel {
     }
     
     func handleAssetsClick(_ type: AssetsInfo.AssetsType) {
+    
+        switch type {
+        case .flex:
+            nextStep.accept(.flex)
+        case .deposit:
+            nextStep.accept(.deposit)
+        case .fund:
+            nextStep.accept(.fund)
+        case .gold:
+            nextStep.accept(.gold)
+        }
         
     }
     

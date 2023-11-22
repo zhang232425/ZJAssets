@@ -25,6 +25,10 @@ public struct ZJAssetsModule: ZJModule {
             return ZJOrderDetailViewController()
         }
         
+        ZJAssetsRoutableTarget.register(path: ZJAssetsRoutePath.test) { _ in
+            return TestViewController()
+        }
+        
     }
     
 }

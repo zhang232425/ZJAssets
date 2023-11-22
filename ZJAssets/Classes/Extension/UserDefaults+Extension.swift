@@ -13,6 +13,8 @@ extension UserDefaults {
     
     static let depositSecureTextStateDidChange = Notification.Name(rawValue: "notification.name.deposit.assets.secure")
     
+    static let testSecureTextStateDidChange = Notification.Name(rawValue: "notification.name.test.secure")
+    
     var isSecureText: Bool {
         
         set {
@@ -25,11 +27,35 @@ extension UserDefaults {
         
     }
     
+    var isDepositSecureText: Bool {
+        
+        set {
+            set(newValue, forKey: #function)
+            synchronize()
+            NotificationCenter.default.post(name: UserDefaults.depositSecureTextStateDidChange, object: newValue)
+        }
+        
+        get { bool(forKey: #function) }
+        
+    }
+    
     var isDisplayAssetsBubble: Bool {
         
         set {
             setValue(newValue, forKey: #function)
             synchronize()
+        }
+        
+        get { bool(forKey: #function) }
+        
+    }
+    
+    var isTestSecureText: Bool {
+        
+        set {
+            set(newValue, forKey: #function)
+            synchronize()
+            NotificationCenter.default.post(name: UserDefaults.testSecureTextStateDidChange, object: newValue)
         }
         
         get { bool(forKey: #function) }

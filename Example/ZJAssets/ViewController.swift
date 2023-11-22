@@ -33,5 +33,14 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func TestClick() {
+        
+        if let vc = ZJAssetsRoutableTarget.test.viewController {
+            present(ZJNavigationController(rootViewController: vc), animated: true)
+        }
+        
+    }
+    
+    
 }
 

@@ -23,10 +23,10 @@ class ZJAssetsViewController: BaseScrollViewController {
     private lazy var naviBar = AssetsNavigationBar().then { [weak self] in
         $0.backgroundColor = .clear
         $0.reportClick = {
-            debugPrint("reportClick ---- ")
+            self?.viewModel.nextStep.accept(.monthReport)
         }
         $0.recordClick = {
-            debugPrint("recordClick ---- ")
+            self?.viewModel.nextStep.accept(.transaction)
         }
     }
 
@@ -143,11 +143,22 @@ private extension ZJAssetsViewController {
             .unwrap().bind(to: viewModel.isSecureText)
             .disposed(by: disposeBag)
         
+        scrollView.rx.addPullToRefresh.bind(to: viewModel.refreshAction.inputs).disposed(by: disposeBag)
+    
+        Observable.merge(viewModel.refreshAction.elements.map { _ in },
+                         viewModel.refreshAction.errors.map { _ in })
+        .bind(to: scrollView.rx.endPullToRefresh)
+        .disposed(by: disposeBag)
+        
         scrollView.rx.contentOffset.map { $0.y }.subscribe(onNext: { [weak self] in
             self?.backgroundView.adjustPositionBy(offsetY: $0)
         }).disposed(by: disposeBag)
         
         viewModel.datas.subscribeNext(weak: self, ZJAssetsViewController.buildSections).disposed(by: disposeBag)
+        
+        viewModel.nextStep.unwrap()
+            .subscribeNext(weak: self, ZJAssetsViewController.doNextStep)
+            .disposed(by: disposeBag)
         
         viewModel.fetchAction.execute()
         
@@ -273,6 +284,30 @@ private extension ZJAssetsViewController {
         }
         
     }
+
+    func doNextStep(_ step: AssetsViewModel.NavigationStep) {
+        
+        switch step {
+        case .monthReport:
+            break
+        case .renewInvest(let balance):
+            break
+        case .insure(let url):
+            break
+        case .deposit:
+            navigationToDeposit()
+        case .flex:
+            break
+        case .fund:
+            break
+        case .gold:
+            break
+        case .transaction:
+            viewModel.hasProcessOrder.accept(false)
+            navigationToTransaction()
+        }
+        
+    }
     
     
 }
@@ -344,5 +379,26 @@ private extension ZJAssetsViewController {
         
     }
     
+    
+}
+
+private extension ZJAssetsViewController {
+    
+    func navigationToDeposit() {
+        
+        let vc = DepositAssetsController()
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    func navigationToTransaction() {
+        
+//        bubbleView?.removeFromSuperview()
+//        bubbleView = nil
+//
+//        let vc = TransactionRecordController(type: .all)
+//        navigationController?.pushViewController(vc, animated: true)
+        
+    }
     
 }

@@ -18,6 +18,10 @@ enum API {
     case chartInfo
     /// 续投金额校验
     case investCheck
+    /// 我的资产 - p2p 定期账户资金
+    case depositAssets
+    /// 我的资产 - p2p 定期订单列表
+    case depositOrderList(page: Int?)
 }
 
 extension API: ZJRequestTargetType {
@@ -34,6 +38,10 @@ extension API: ZJRequestTargetType {
             return "/biz/order/all/order/monthlyIncommeTrend"
         case .investCheck:
             return "/order/continue/verify"
+        case .depositAssets:
+            return "/biz/order/p2p/fiexed/overview"
+        case .depositOrderList:
+            return "/biz/order/p2p/fiexed/list/v2"
         }
     }
     
@@ -47,6 +55,10 @@ extension API: ZJRequestTargetType {
             return .get
         case .investCheck:
             return .post
+        case .depositAssets:
+            return .get
+        case .depositOrderList:
+            return .get
         }
     }
     
@@ -60,6 +72,12 @@ extension API: ZJRequestTargetType {
             return .requestPlain
         case .investCheck:
             return .requestPlain
+        case .depositAssets:
+            return .requestPlain
+        case .depositOrderList(let page):
+            var params = [String: Any]()
+            params["page"] = page
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
         }
     }
     

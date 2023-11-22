@@ -13,12 +13,14 @@ public extension ZJAssetsRoutePath {
     
     static let assets = ZJRoutePath(value: "as://assets.main")
     static let orderDetail = ZJRoutePath(value: "as://assets.orderDetail")
+    static let test = ZJRoutePath(value: "as://assets.test")
     
 }
 
 public enum ZJAssetsRoutableTarget {
     case assets
     case orderDetail(productId: String, orderId: String, orderType: Int)
+    case test
 }
 
 extension ZJAssetsRoutableTarget: ZJRoutableTarget {
@@ -29,6 +31,8 @@ extension ZJAssetsRoutableTarget: ZJRoutableTarget {
             return ZJAssetsRoutePath.assets
         case .orderDetail:
             return ZJAssetsRoutePath.orderDetail
+        case .test:
+            return ZJAssetsRoutePath.test
         }
     }
     
@@ -42,6 +46,8 @@ extension ZJAssetsRoutableTarget: ZJRoutableTarget {
             params["orderId"] = orderId
             params["orderType"] = orderType
             return params
+        case .test:
+            return nil
         }
     }
     

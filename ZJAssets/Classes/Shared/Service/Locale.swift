@@ -115,6 +115,13 @@ enum Locale: String {
     case overdue
     case total_maturity_amount
     case total_tax
+
+    case transaction
+    
+    case days
+    case day
+    case months
+    case month
     
     //Empty
     case no_product
@@ -125,6 +132,173 @@ enum Locale: String {
     case no_regular_order
     case no_regular_order_button
     case refresh
+    
+    case total_return
+    case yesterday_return
+    case expired_orders
+    case amount_to_be_paid
+    case insurance_premium
+    
+    case reLend
+    case confirm
+    case cancel
+    case auto_relend
+    
+    case auto_withdrawin
+    case continue_lending
+    case manual_withdrawal
+    case withdrawing
+    case virtual_account
+    case to_pay
+    case expired
+    case virtual_account_expired
+    
+    case close_autoLend_tips
+    
+    //MARK: - Order Expired
+    case order_expired_tip
+    
+    //MARK: - Asset detail
+    case current_lending
+    case current_lending_new
+    case usable_amount
+
+    case deposit
+    case funding_amount
+    
+    case auto_continue_remind
+    case please_select_product
+    case select_product_first
+
+    case withdrawal_plan
+    case withdraw_period_head
+    case withdraw_period_foot
+    case withdraw_period_comma
+    case withdraw_period_total
+    case withdrawn
+    case pending_withdrawal
+    case invest_time
+    case tax
+    case totalTax
+    case tax_subtitle1
+    case tax_subtitle2
+    case tax_subtitle3
+    case tax_content
+    case days_of_interest_calculation
+    case tenor
+    case maturity_date_alert
+    case after_maturity
+    case after_maturity_question
+    case coupon
+    case earnings_from_coupon
+    case order_id
+    case withdraw_type
+    case best_call_time
+    case total_expected_return
+    case estimated_return_rate
+    case got_it
+    
+    case credittobank
+    case name
+    case bank
+    case bankno
+    case borrower_details
+    case contract
+    
+    case agreementLabel_text
+    case agreementLabel_text1
+    
+    case continue_funding_now
+    
+    case tips
+    case i_know
+    
+    case withdraw_tips_do
+    case withdraw_tips_giveup
+    
+    case withdraw_success
+    
+    case continue_lend
+    case apply_for_withdrawal
+    
+    //MARK: - sign
+    case sign_now
+    case sign_alert
+    
+    //MARK: - continue investment
+    case continue_withdraw
+    case continue_withdrawing
+    
+    //MARK: - auto product list
+    case best_selling_product
+    case pick_it
+    
+    case select_products
+    case select_products_add_interst1
+    case select_products_add_interst2
+    case select_products_add_interst3
+
+    case daily_earnings
+    case select
+    case selected
+
+    case select_products_bottom
+    
+    //MARK: - auto product selected Alert
+    case choose_product_confirm_1
+    case choose_product_confirm_2
+    case choose_product_confirm_3
+
+    //MARK: - 活期
+    case flexible_balance
+    case in_process_of_withdraw
+    case total_earnings
+    case yesterdays_earnings
+    case fund_details
+    case fund
+    case withdraw
+    case details
+
+    //MARK: - withdraw 活期提现
+    case amount_pending_withdrawal
+    case withdrawal_amount
+    case minimum_withdrawal_amount
+    case maximum_withdrawal_amount
+    case minimum_withdrawal_amount_remind
+    case maximum_withdrawal_amount_remind
+    case less_available_amount
+    case expected_arrival_time
+    case bank_card_to_receive
+    case rules
+
+    //MARK: - withdraw Result 活期提现结果
+    case application_result
+    case in_process_of_automatic_withdrawal
+    case estimated_receive_account
+    case completed
+    
+    //MARK: - history
+    case transcation_records
+    case `in`
+    case out
+    case select_time
+
+    //Mark: - TimeSelector
+    case select_month
+    case set_time_Periods
+    case more_than_one_year
+    
+    //MARK: - 投资成功
+    case payment
+    case continue_funding
+
+    //MARK: - 提现成功
+    case check_order
+    
+    case autoFundDay        = "auto_fund_day"
+    case autoFundTip        = "auto_fund_tip"
+    case autoWithdrawDay    = "auto_withdraw_day"
+    case autoWithdrawTip    = "auto_withdraw_tip"
     
 }
 

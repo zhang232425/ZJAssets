@@ -248,7 +248,7 @@ CHECKOUT OPTIONS:
     :commit: d2855ff0b65e3142eb90a561827b7dd07fec044d
     :git: "git@github.com:zhang232425/ZJRefresh.git"
   ZJRoutableTargets:
-    :commit: e1e8df9484a8d3fb26b232a25548ef8a3ffd717a
+    :commit: 1fa4b9b0710ff52f49df312a81cce07b93e1e402
     :git: "git@github.com:zhang232425/ZJRoutableTargets.git"
 
 SPEC CHECKSUMS:
@@ -297,6 +297,6 @@ SPEC CHECKSUMS:
   ZJRouter: 2ae914db45b7844d11cb186d4de4dff75a5085b9
   ZJValidator: f1f4767a1a433ca41d2f33e0207172aa48afe58e
 
-PODFILE CHECKSUM: d5bfa3f17fe5dd8a28600fc14c8b70c3086085b1
+PODFILE CHECKSUM: 86713dace3136b92f98e14a7c4976cb75e4b2cc6
 
 COCOAPODS: 1.11.2

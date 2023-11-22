@@ -129,3 +129,188 @@
 "no_regular_order_button" = "Check Now";
 "refresh" = "Refresh";
 
+"days" = "Days";
+"day" = "Day";
+"months" = "Months";
+"month" = "Month";
+
+//MARK: - bill
+"total_return" = "Total Earnings";
+"yesterday_return" = "Yesterday's Earnings";
+"history" = "History";
+"expired_orders" = "Expired Orders";
+
+"product_name" = "Insured Name";
+"amount_to_be_paid" = "Amount to be Paid";
+"insurance_premium" = "Insurance Premium";
+
+"reLend" = "Continue Funding";
+"balance" = "Total Balance";
+"confirm" = "Confirm";
+"cancel" = "Cancel";
+"auto_relend" = "Auto Continue Funding";
+
+"auto_withdrawing" = "Auto Withdrawing";
+"continue_lending" = "Continue Funding";
+"manual_withdrawal" = "Manual withdrawal review";
+"withdrawing" = "Cash withdrawal is on going";
+"virtual_account" = "Virtual Account";
+"to_pay" = "Go to Pay";
+"expired" = "Expired";
+"virtual_account_expired" = "Virtual account has expired";
+
+"close_autoLend_tips" = "After withdrawal, you may need to grab the product quota if you want to fund again. Confirm to turn off the button?";
+
+//MARK: - Order Expired
+"order_expired_tip" = "Virtual account has expired";
+
+//MARK: - Asset detail
+"current_lending" = "Current Funding";
+"current_lending_new" = "Amount Receivable";
+"usable_amount" = "Balance";
+
+"deposit" = "Deposit";
+"funding_amount" = "Funding Amount";
+"transaction" = "Transaction No.";
+
+"auto_continue_remind" = "It will Auto Continue Funding as";
+"please_select_product" = "Please select Auto Continue Funding products";
+"select_product_first" = "Please select the product first";
+
+"withdrawal_plan" = "Withdrawal Plan";
+"withdraw_period_head"= "Withdraw in ";
+"withdraw_period_foot"= " period(s)";
+"withdraw_period_comma" = ", ";
+"withdraw_period_total"= " periods in total";
+"withdrawn" = "Withdrawn";
+"pending_withdrawal" = "Pending Withdrawal";
+"invest_time" = "Funding Time";
+"tax" = "Tax";
+"totalTax" = "Total Tax";
+"tax_subtitle1" = "Total Tax = Expected Earnings* Tax Rate";
+"tax_subtitle2" = "Total Tax = (Expected Earnings-Insurance Premium) * Tax Rate";
+"tax_subtitle3" = "Total Tax = (Actual Earnings - Insurance Premium) * Tax Rate";
+"tax_content" = " Earnings of lenders who haven't provided NPWP information are taxed at 30% for Indonesian citizens and 20% for foreign citizens. Earnings of lenders who provide NPWP information are taxed at 15% for both Indonesian and foreign citizens";
+"days_of_interest_calculation" = "Days of Interest Calculation";
+"tenor" = "Tenor";
+"maturity_date" = "Maturity Date";
+"maturity_date_alert" = "Interest will be calculated on the next day after the payment is successful, and estimated earnings and maturity date will be generated.";
+"after_maturity" = "After Maturity";
+"after_maturity_question" = "Open the button，the principal and interest will automatically continue funding in the products with continuous earnings";
+"coupon" = "Coupon";
+"earnings_from_coupon" = "Earnings from coupon ";
+"order_id" = "Order ID";
+"withdraw_type" = "Withdraw Type";
+"best_call_time" = "Best phone time";
+"total_expected_return" = "Total Expected Earnings";
+"estimated_return_rate" = "Estimated Earnings %";
+"got_it" = "Got It";
+
+"credittobank" = "Bank Account";
+"name" = "Name";
+"bank" = "Bank";
+"bankno" = "Bank Account No.";
+"borrower_details" = "Borrower Details";
+"contract" = "Electronic Signature Contract";
+//"contract" = "Contract(s)"; // - 【liveDemo之前版本】 使用这个翻译
+
+"agreementLabel_text" = "I have read and agree to the ";
+"agreementLabel_text1" = "TnC Funding and Borrowing AsetKu.";
+
+"continue_funding_now" = "Continue Funding";
+
+"tips" = "Tips";
+"i_know" = "I know";
+
+"withdraw_tips_do" = "Continue ";
+"withdraw_tips_giveup" = "Cancel";
+
+"withdraw_success" = "Apply Successfully";
+
+"continue_lend" = "Continue Funding";
+"apply_for_withdrawal" = "Apply for Withdrawal";
+
+//MARK: - sign
+"sign_now" = "Sign Now";
+"sign_alert" = "According to the requirements of relevant Indonesian laws and regulations, in order to protect your legitimate rights and interests from infringement, please electronically sign the contract that has been invested.";
+
+//MARK: - continue investment
+"continue_withdraw" = "Manual withdrawal review";
+"continue_withdrawing" = "Cash withdrawal is on going";
+
+//MARK: - auto product list
+"best_selling_product" = "Best-selling product, reserve in advcance to continue funding";
+"pick_it" = "Pick it";
+
+"select_products" = "Select Products";
+"select_products_add_interst1" = "Reserve the product quota in advance and Auto Continue Funding at maturity, ";
+"select_products_add_interst2"  = "enjoy ";
+"select_products_add_interst3"  = " interest added!";
+
+"daily_earnings" = "Daily Earnings";
+"expected_earnings" = "Expected Earnings";
+"select" = "Select";
+"selected" = "Confirmed";
+
+"select_products_bottom" = "*The expected earnings are calculated based on the maturity amount, please refer to the expected earnings after successfully continue funding.";
+
+//MARK: - auto product selected Alert
+"choose_product_confirm_1" = "Choose ";
+"choose_product_confirm_2" = " to continue funding after maturity";
+"choose_product_confirm_3" = "? Once continue funding successfully, it cannot be changed to other products, please operate with caution.";
+
+"ok" = "OK";
+
+//MARK: - 活期
+"flexible_balance" = "Total Amount"; // 核桃说要改的
+"in_process_of_withdraw" = "Withdrawal in Process ";
+"total_earnings" = "Total Earnings";
+"yesterdays_earnings" = "Yesterday's Earnings";
+"fund_details" = "Funding Details";
+"fund" = "Fund";
+"withdraw" = "Withdraw";
+"details" = "Details";
+
+//MARK: - withdraw 活期提现
+"amount_pending_withdrawal" = "Withdrawal Amount Available";
+"withdrawal_amount" = "Amount Received";
+"minimum_withdrawal_amount" = "Min. ";
+"maximum_withdrawal_amount" = "Max. ";
+"minimum_withdrawal_amount_remind" = "Minimum withdrawal amount ";
+"maximum_withdrawal_amount_remind" = "Maximum withdrawal amount ";
+"less_available_amount" = "The available withdrawal amount is less than ";
+"expected_arrival_time" = "Expected Arrival Date";
+"bank_card_to_receive" = "Bank Card to Receive";
+"rules" = "Rules";
+
+//MARK: - withdraw Result 活期提现结果
+"application_result" = "Application Result";
+"in_process_of_automatic_withdrawal" = "In process of automatic withdrawal";
+"estimated_receive_account" = "Estimated Date to account ";
+"completed" = "Completed";
+
+//MARK: - history
+"transcation_records" = "Transaction Records";
+"all" = "All";
+"in" = "In";
+"out" = "Out";
+"earnings" = "Earnings";
+"select_time" = "Select Time";
+
+//Mark: - TimeSelector
+"select_month" = "Select Month";
+"set_time_Periods" = "Set Time Periods";
+"more_than_one_year" = "The query interval needs to be less than one year, please select again";
+
+//MARK: - 投资成功
+"payment" = "Payment";
+"continue_funding" = "Continue Funding";
+
+//MARK: - 提现成功
+"check_order" = "Check Order";
+
+"auto_fund_day" = "Auto continue funding after %@ days";
+"auto_fund_tip" = "The principal and income will be auto continue funded. If you need to withdraw, please turn off the switch before %@";
+"auto_withdraw_day" = "Can be withdrawn after %@ days";
+"auto_withdraw_tip" = "Funding can be withdrawn after due. If you need automatic renewal, please turn on the switch before %@. The quota is running out. The faster automatic renewal activated, the higher success rate to continue funding!";
+

@@ -119,6 +119,11 @@
 "total_maturity_amount" = "Total Pembayaran";
 "total_tax" = "Total Pajak";
 
+"days" = "Hari";
+"day" = "Hari";
+"months" = "Bulan";
+"month" = "Bulan";
+
 //Empty
 "no_product" = "Kuota sedang diperbarui, mohon tunggu.";
 "no_signal" = "Tidak Ada Sinyal";
@@ -129,3 +134,182 @@
 "no_regular_order_button" = "Cek";
 "refresh" = "Coba Lagi";
 
+//MARK: - bill
+"total_return" = "Akumulasi Penghasilan";
+"yesterday_return" = "Penghasilan Kemarin";
+"history" = "Riwayat";
+"expired_orders" = "Pesanan Kadaluwarsa";
+
+"product_name" = "Nama Tertanggung";
+"amount_to_be_paid" = "Jumlah Harus Dibayar";
+"insurance_premium" = "Premi Asuransi";
+
+"reLend" = "Lanjutkan Pendanaan";
+"balance" = "Total Saldo";
+"confirm" = "Konfirmasi";
+"cancel" = "Batalkan";
+"auto_relend" = "Lanjutkan Pendanaan Otomatis";
+
+"auto_withdrawing" = "Penarikan Otomatis";
+"continue_lending" = "Lanjutkan Pendanaan";
+"manual_withdrawal" = "Verifikasi manual penarikan dana";
+"withdrawing" = "Penarikan dana dalam proses verifikasi";
+"virtual_account" = "Akun Virtual";
+"to_pay" = "Silakan Bayar";
+"expired" = "Kadaluwarsa";
+"virtual_account_expired" = "Akun Virtual Kadaluarsa";
+
+"close_autoLend_tips" = "Setelah penarikan, Anda mungkin perlu mengambil kuota produk secepatnya jika ingin mendanai lagi. Konfirmasikan matikan tombol?";
+
+//MARK: - Order Expired
+"order_expired_tip" = "Akun Virtual Kadaluarsa";
+
+//MARK: - Asset detail
+"current_lending" = "Total Pendanaan";
+"current_lending_new" = "Nominal Penerimaan";
+"usable_amount" = "Saldo";
+
+"deposit" = "Modal awal";
+"funding_amount" = "Nominal Pendanaan";
+"transaction" = "Order ID.";
+
+"auto_continue_remind" = "Ini akan otomatis lanjutkan pendanaan sebagai";
+"please_select_product" = "Silakan pilih produk otomatis lanjutkan pendanaan";
+"select_product_first" = "Silakan pilih produk terlebih dahulu";
+
+"withdrawal_plan" = "Rencana Penarikan";
+"withdraw_period_head"= "Penarikan dalam ";
+"withdraw_period_foot"= " periode";
+"withdraw_period_comma" = ", ";
+"withdraw_period_total"= " periode secara total";
+"withdrawn" = "Ditarik";
+"pending_withdrawal" = "Penarikan Tertunda";
+"invest_time" = "Tanggal Pendanaan";
+"tax" = "Pajak";
+"totalTax" = "Total Pajak";
+"tax_subtitle1" = "Total Pajak = Estimasi Imbal Hasil* Tarif Pajak";
+"tax_subtitle2" = "Total Pajak = (Estimasi Imbal Hasil-Premi Asuransi)* Tarif Pajak";
+"tax_subtitle3" = "Total Pajak = (Penghasilan Aktual - Premi Asuransi) * Tarif Pajak";
+"tax_content" = "Imbal hasil pendana yang belum melengkapi informasi NPWP dikenakan pajak sebesar 30% untuk Warga Negara Indonesia (WNI) dan 20% untuk Warga Negara Asing (WNA). Imbal hasil pendana yang sudah melengkapi informasi NPWP dikenakan pajak sebesar 15% untuk WNI maupun WNA";
+"days_of_interest_calculation" = "Perhitungan Bunga Harian";
+"tenor" = "Jangka Waktu";
+"maturity_date" = "Tanggal Jatuh Tempo";
+"maturity_date_alert" = "Bunga akan dihitung pada hari berikutnya setelah pembayaran berhasil, dan estimasi pengembalian dan tanggal jatuh tempo akan dihasilkan.";
+"after_maturity" = "Setelah Jatuh Tempo";
+"after_maturity_question" = "Jumlah total yang akan didanai secara otomatis ke pesanan baru Anda.Tidak dapat dimodifikasi setelah kedaluwarsa";
+"coupon" = "Kupon";
+"earnings_from_coupon" = "Penghasilan dari kupon ";
+"order_id" = "Order ID";
+"withdraw_type" = "Tipe Penarikan";
+"best_call_time" = "Waktu terbaik menelepon";
+"total_expected_return" = "Total Perkiraan Penghasilan";
+"estimated_return_rate" = "Estimasi Pengembalian %";
+"got_it" = "Saya Mengerti";
+
+"credittobank" = "Akun Bank";
+"name" = "Nama";
+"bank" = "Bank";
+"bankno" = "No.Rekening";
+"borrower_details" = "Rincian peminjam";
+"contract" = "Kontrak Tanda Tangan Elektronik";
+//"contract" = "Kontrak"; // - 【liveDemo之前版本】 使用这个翻译
+
+"agreementLabel_text" = "Saya telah membaca dan menyetujui ";
+"agreementLabel_text1" = "Syarat dan Ketentuan Pinjam Meminjam AsetKu";
+
+"continue_funding_now" = "Lanjutkan Pendanaan";
+
+"tips" = "Saran";
+"i_know" = "Saya Tahu";
+
+"withdraw_tips_do" = "Lanjutkan";
+"withdraw_tips_giveup" = "Ditinggalkan";
+
+"withdraw_success" = "Pengajuan Berhasil";
+
+"continue_lend" = "Lanjutkan Pendanaan";
+"apply_for_withdrawal" = "Ajukan untuk penarikan";
+
+//MARK: - sign
+"sign_now" = "Tanda Tangan Sekarang";
+"sign_alert" = "Sesuai dengan persyaratan peraturan yang berlaku di Indonesia dan demi menjamin Anda dari adanya kegiatan pelanggaran, harap untuk menandatangani perjanjian yang telah didanai melalui Tanda Tangan Elektronik.";
+
+//MARK: - continue investment
+"continue_withdraw" = "Verifikasi manual penarikan dana";
+"continue_withdrawing" = "Penarikan dana dalam proses verifikasi";
+
+//MARK: - auto product list
+"best_selling_product" = "Produk terlaris, reservasi terlebih dahulu untuk lanjutkan pendanaan";
+"pick_it" = "Pilih ini";
+
+"select_products" = "Pilih Produk";
+"select_products_add_interst1" = "Reservasi kuota produk terlebih dahulu dan otomatis lanjutkan pendanaan pada saat jatuh tempo, ";
+"select_products_add_interst2"  = "nikmati bunga tambahan ";
+"select_products_add_interst3"  = " !";
+
+"daily_earnings" = "Penghasilan Harian";
+"expected_earnings" = "Perkiraan Penghasilan";
+"select" = "Pilih";
+"selected" = "Terpilih";
+
+"select_products_bottom" = "*Perkiraan penghasilan dihitung berdasarkan jumlah jatuh tempo, silakan merujuk kepada perkiraan penghasilan setelah berhasil lanjutkan pendanaan.";
+
+//MARK: - auto product selected Alert
+"choose_product_confirm_1" = "Yakin pilih ";
+"choose_product_confirm_2" = " untuk Lanjutkan Pendanaan otomatis setelah lewat jatuh tempo";
+"choose_product_confirm_3" = "? Setelah berhasil dilanjutkan, tidak dapat diubah ke pendanaan lain. Mohon operasikan dengan teliti.";
+
+"ok" = "OK";
+
+//MARK: - 活期
+"flexible_balance" = "Total Nominal"; // 核桃说要改的
+"in_process_of_withdraw" = "Sedang Penarikan ";
+"total_earnings" = "Total Penghasilan";
+"yesterdays_earnings" = "Penghasilan Kemarin";
+"fund_details" = "Rincian Pendanaan";
+"fund" = "Pendanaan";
+"withdraw" = "Tarik Tunai";
+"details" = "Rincian";
+
+//MARK: - withdraw 活期提现
+"amount_pending_withdrawal" = "Dapat ditarik tunai";
+"withdrawal_amount" = "Nominal yang Diterima";
+"minimum_withdrawal_amount" = "Min. ";
+"maximum_withdrawal_amount" = "Max. ";
+"minimum_withdrawal_amount_remind" = "Jumlah penarikan minimal ";
+"maximum_withdrawal_amount_remind" = "Jumlah penarikan maksimal ";
+"less_available_amount" = "Jumlah penarikan yang tersedia kurang dari ";
+"expected_arrival_time" = "Perkiraan Waktu Penarikan";
+"bank_card_to_receive" = "Bank Penerima";
+"rules" = "Ketentuan";
+
+//MARK: - withdraw Result 活期提现结果
+"application_result" = "Hasil Pengajuan";
+"in_process_of_automatic_withdrawal" = "Sedang proses penarikan otomatis";
+"estimated_receive_account" = "Perkiraan Tanggal Rekening ";
+"completed" = "Selesai";
+
+//MARK: - history
+"transcation_records" = "Riwayat Transaksi";
+"all" = "Semua";
+"in" = "Masuk";
+"out" = "Keluar";
+"earnings" = "Penghasilan";
+"select_time" = "Pilih Waktu";
+
+//Mark: - TimeSelector
+"select_month" = "Pilih Bulan";
+"set_time_Periods" = "Tetapkan Jangka Waktu";
+"more_than_one_year" = "Kisaran waktu pencarian harus dibawah 1 tahun, silakan pilih ulang";
+
+//MARK: - 投资成功
+"payment" = "Pembayaran";
+"continue_funding" = "Lanjutan Pendanaan";
+
+//MARK: - 提现成功
+"check_order" = "Cek Pesanan";
+
+"auto_fund_day" = "Otomatis Lanjutkan Pendanaan setelah %@ hari";
+"auto_fund_tip" = "Dana awal dan penghasilan akan dilanjutkan secara otomatis. Matikan tombol sebelum %@, jika Anda ingin tarik dana";
+"auto_withdraw_day" = "Akan jatuh tempo dan dapat ditarik setelah %@ hari";
+"auto_withdraw_tip" = "Tarik pendanaan setelah jatuh tempo. Jika Anda perlu melanjutkan pendanaan secara otomatis, silakan aktifkan tombol sebelum %@.Kuota menipis. Semakin cepat tombol pendanaan otomatis diaktifkan, semakin tinggi tingkat keberhasilan lanjutkan pendanaan!";

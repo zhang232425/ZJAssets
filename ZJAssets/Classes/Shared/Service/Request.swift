@@ -50,6 +50,24 @@ struct Request {
             .map { $0.data }
     }
     
+    /// 我的资产 - p2p 定期账户资金
+    static func fetchDepositAssets() -> Observable<DepositAssets?> {
+        API.depositAssets.rx.request()
+            .ensureResponseStatus()
+            .mapObject(ZJRequestResult<DepositAssets>.self)
+            .asObservable()
+            .map { $0.data }
+    }
+    
+    /// 我的资产 - p2p 定期订单列表
+    static func fetchDepositOrderList(page: Int?) -> Observable<(DepositOrderPage?, NSNumber?)> {
+        API.depositOrderList(page: page).rx.request()
+            .ensureResponseStatus()
+            .mapObject(ZJRequestResult<DepositOrderPage>.self)
+            .asObservable()
+            .map { ($0.data, $0.sysTime) }
+    }
+    
 }
 
 extension PrimitiveSequence where Trait == SingleTrait, Element == Moya.Response {

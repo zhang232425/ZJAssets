@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class RoundCornerView: UIView {
+open class RoundCornerView: UIView {
     
     private var borderLayer: CAShapeLayer?
     
@@ -37,7 +37,7 @@ public class RoundCornerView: UIView {
         backgroundColor = .white
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

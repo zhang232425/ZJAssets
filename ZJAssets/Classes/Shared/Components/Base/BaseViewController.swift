@@ -22,6 +22,7 @@ class BaseViewController: ZJViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
     }
     
     func doProgress(_ executing: Bool) {

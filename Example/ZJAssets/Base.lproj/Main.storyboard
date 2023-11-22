@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XT8-7n-wbI">
-                                <rect key="frame" x="149.5" y="200" width="76" height="35"/>
+                                <rect key="frame" x="149.5" y="120" width="76" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="资产页"/>
                                 <connections>
@@ -28,26 +28,36 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OH-TJ-Kpv">
-                                <rect key="frame" x="158" y="292" width="59" height="35"/>
+                                <rect key="frame" x="158" y="212" width="59" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="登录"/>
                                 <connections>
                                     <action selector="loginClick" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cH4-2K-wq2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3Q-Aw-yLX">
+                                <rect key="frame" x="159.5" y="304" width="56.5" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Test"/>
+                                <connections>
+                                    <action selector="TestClick" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kfS-IS-T1I"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XT8-7n-wbI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="200" id="NOS-Vg-tko"/>
+                            <constraint firstItem="Q3Q-Aw-yLX" firstAttribute="top" secondItem="0OH-TJ-Kpv" secondAttribute="bottom" constant="57" id="MdW-3u-buH"/>
+                            <constraint firstItem="XT8-7n-wbI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="120" id="NOS-Vg-tko"/>
                             <constraint firstItem="XT8-7n-wbI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Pnp-2S-03y"/>
                             <constraint firstItem="0OH-TJ-Kpv" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="SM8-qz-uFq"/>
+                            <constraint firstItem="Q3Q-Aw-yLX" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="aMI-WS-6Gt"/>
                             <constraint firstItem="0OH-TJ-Kpv" firstAttribute="top" secondItem="XT8-7n-wbI" secondAttribute="bottom" constant="57" id="gxF-Fg-sRW"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-668" y="-143"/>
+            <point key="canvasLocation" x="-769" y="-143"/>
         </scene>
     </scenes>
 </document>
