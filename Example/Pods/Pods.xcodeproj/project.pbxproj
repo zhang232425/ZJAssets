@@ -1385,8 +1385,27 @@
 		46EB2E0000F180 /* ZJLocalizable-ZJLocalizable in Resources */ = {isa = PBXBuildFile; fileRef = FD2B9CAB2A6596FC35F6B611E5F42FD6 /* ZJLocalizable-ZJLocalizable */; };
 		46EB2E0000F550 /* ZJRegion-ZJRegion in Resources */ = {isa = PBXBuildFile; fileRef = 61706C52A722C7072ECE7CDEB5156231 /* ZJRegion-ZJRegion */; };
 		46EB2E0000F6E0 /* ZJValidator-ZJValidator in Resources */ = {isa = PBXBuildFile; fileRef = FA08430103907551C394D3F177B69783 /* ZJValidator-ZJValidator */; };
+		D60F77362B0DD7D800470E7E /* DepositIncomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F77352B0DD7D800470E7E /* DepositIncomeController.swift */; };
+		D60F77382B0DDA9B00470E7E /* DepositIncomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F77372B0DDA9B00470E7E /* DepositIncomeViewModel.swift */; };
+		D60F773A2B0DEB4A00470E7E /* DepositIncomeTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F77392B0DEB4A00470E7E /* DepositIncomeTipView.swift */; };
+		D60F773C2B0DEE7000470E7E /* DepositTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F773B2B0DEE7000470E7E /* DepositTopView.swift */; };
+		D60F773E2B0E007600470E7E /* DepositIncome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F773D2B0E007600470E7E /* DepositIncome.swift */; };
+		D60F77402B0E046800470E7E /* DepositIncomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F773F2B0E046800470E7E /* DepositIncomeHeaderCell.swift */; };
+		D60F77422B0E069000470E7E /* DepositIncomeTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F77412B0E069000470E7E /* DepositIncomeTitleCell.swift */; };
+		D60F77442B0E09A300470E7E /* DepositIncomeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F77432B0E09A300470E7E /* DepositIncomeItemCell.swift */; };
+		D60F77492B0E0A4B00470E7E /* TransactionEmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F77482B0E0A4B00470E7E /* TransactionEmptyCell.swift */; };
+		D61E412D2B0F36F8000AB14D /* ZJSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E412C2B0F36F8000AB14D /* ZJSegmentedView.swift */; };
+		D61E412F2B0F4FB7000AB14D /* DepositHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E412E2B0F4FB7000AB14D /* DepositHistoryController.swift */; };
+		D61E41312B0F5001000AB14D /* DepositInProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E41302B0F5001000AB14D /* DepositInProgressController.swift */; };
+		D61E41332B0F53FF000AB14D /* TransactionListBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E41322B0F53FF000AB14D /* TransactionListBaseController.swift */; };
+		D61E41362B0F588B000AB14D /* DepositInProgressVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E41352B0F588B000AB14D /* DepositInProgressVM.swift */; };
 		D62A85142B0C877F00938CB1 /* TestHeaderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62A85132B0C877F00938CB1 /* TestHeaderInfo.swift */; };
 		D62A85162B0C895000938CB1 /* TestSecureProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62A85152B0C895000938CB1 /* TestSecureProtocol.swift */; };
+		D6793B192B103FB3008D2CD7 /* TransactionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6793B182B103FB3008D2CD7 /* TransactionItemCell.swift */; };
+		D6793B1B2B10443C008D2CD7 /* TransactionListCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6793B1A2B10443C008D2CD7 /* TransactionListCellVM.swift */; };
+		D6793B1E2B1044A4008D2CD7 /* TransactionListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6793B1D2B1044A4008D2CD7 /* TransactionListItem.swift */; };
+		D6793B202B1047E4008D2CD7 /* NoMoreDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6793B1F2B1047E4008D2CD7 /* NoMoreDataCell.swift */; };
+		D6793B222B10514D008D2CD7 /* TransactionParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6793B212B10514D008D2CD7 /* TransactionParam.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -4062,8 +4081,27 @@
 		CD63405120225602F8DF676BC778C745 /* ZJRequest-ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ZJRequest-ZJRequest"; path = ZJRequest.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28763E37EDD385B2F7D6DE39F447784 /* ZJLocalizable */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJLocalizable; path = ZJLocalizable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51C3D0C53D23B97B032E3BDD4F82C82 /* Differentiator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Differentiator; path = Differentiator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60F77352B0DD7D800470E7E /* DepositIncomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositIncomeController.swift; sourceTree = "<group>"; };
+		D60F77372B0DDA9B00470E7E /* DepositIncomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositIncomeViewModel.swift; sourceTree = "<group>"; };
+		D60F77392B0DEB4A00470E7E /* DepositIncomeTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositIncomeTipView.swift; sourceTree = "<group>"; };
+		D60F773B2B0DEE7000470E7E /* DepositTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositTopView.swift; sourceTree = "<group>"; };
+		D60F773D2B0E007600470E7E /* DepositIncome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositIncome.swift; sourceTree = "<group>"; };
+		D60F773F2B0E046800470E7E /* DepositIncomeHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositIncomeHeaderCell.swift; sourceTree = "<group>"; };
+		D60F77412B0E069000470E7E /* DepositIncomeTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositIncomeTitleCell.swift; sourceTree = "<group>"; };
+		D60F77432B0E09A300470E7E /* DepositIncomeItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositIncomeItemCell.swift; sourceTree = "<group>"; };
+		D60F77482B0E0A4B00470E7E /* TransactionEmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionEmptyCell.swift; sourceTree = "<group>"; };
+		D61E412C2B0F36F8000AB14D /* ZJSegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJSegmentedView.swift; sourceTree = "<group>"; };
+		D61E412E2B0F4FB7000AB14D /* DepositHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositHistoryController.swift; sourceTree = "<group>"; };
+		D61E41302B0F5001000AB14D /* DepositInProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositInProgressController.swift; sourceTree = "<group>"; };
+		D61E41322B0F53FF000AB14D /* TransactionListBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListBaseController.swift; sourceTree = "<group>"; };
+		D61E41352B0F588B000AB14D /* DepositInProgressVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositInProgressVM.swift; sourceTree = "<group>"; };
 		D62A85132B0C877F00938CB1 /* TestHeaderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHeaderInfo.swift; sourceTree = "<group>"; };
 		D62A85152B0C895000938CB1 /* TestSecureProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSecureProtocol.swift; sourceTree = "<group>"; };
+		D6793B182B103FB3008D2CD7 /* TransactionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemCell.swift; sourceTree = "<group>"; };
+		D6793B1A2B10443C008D2CD7 /* TransactionListCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListCellVM.swift; sourceTree = "<group>"; };
+		D6793B1D2B1044A4008D2CD7 /* TransactionListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListItem.swift; sourceTree = "<group>"; };
+		D6793B1F2B1047E4008D2CD7 /* NoMoreDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoMoreDataCell.swift; sourceTree = "<group>"; };
+		D6793B212B10514D008D2CD7 /* TransactionParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionParam.swift; sourceTree = "<group>"; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76D7F1684ADF94AB3417C503AD83AD6 /* Pods-ZJAssets_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZJAssets_Example"; path = Pods_ZJAssets_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C5BC805E4D0610414D6D3C234F2DDB /* ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRequest; path = ZJRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6323,10 +6361,10 @@
 		46EB2E00004410 /* Biz */ = {
 			isa = PBXGroup;
 			children = (
+				46EB2E00004720 /* Test */,
 				46EB2E00004420 /* Assets */,
 				46EB2E000045A0 /* DepositAssets */,
 				46EB2E000046F0 /* OrderDetail */,
-				46EB2E00004720 /* Test */,
 				46EB2E000047C0 /* Transaction */,
 			);
 			name = Biz;
@@ -6407,6 +6445,7 @@
 			children = (
 				46EB2E000045C0 /* DepositAssetsController.swift */,
 				46EB2E000045D0 /* DepositBaseController.swift */,
+				D60F77352B0DD7D800470E7E /* DepositIncomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -6418,6 +6457,7 @@
 				46EB2E00004600 /* DepositAssetsHeaderInfo.swift */,
 				46EB2E00004610 /* DepositListItem.swift */,
 				46EB2E00004620 /* DepositOrder.swift */,
+				D60F773D2B0E007600470E7E /* DepositIncome.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -6434,6 +6474,11 @@
 				46EB2E000046A0 /* DepositRateView.swift */,
 				46EB2E000046B0 /* DepositSeparatorCell.swift */,
 				46EB2E000046C0 /* DepositSignView.swift */,
+				D60F77392B0DEB4A00470E7E /* DepositIncomeTipView.swift */,
+				D60F773B2B0DEE7000470E7E /* DepositTopView.swift */,
+				D60F773F2B0E046800470E7E /* DepositIncomeHeaderCell.swift */,
+				D60F77412B0E069000470E7E /* DepositIncomeTitleCell.swift */,
+				D60F77432B0E09A300470E7E /* DepositIncomeItemCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -6442,6 +6487,7 @@
 			isa = PBXGroup;
 			children = (
 				46EB2E000046E0 /* DepositAssetsViewModel.swift */,
+				D60F77372B0DDA9B00470E7E /* DepositIncomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -6511,6 +6557,9 @@
 		46EB2E000047C0 /* Transaction */ = {
 			isa = PBXGroup;
 			children = (
+				D6793B1C2B104486008D2CD7 /* Model */,
+				D61E41342B0F586E000AB14D /* ViewModel */,
+				D60F77472B0E0A3C00470E7E /* View */,
 				46EB2E000047D0 /* Controller */,
 			);
 			path = Transaction;
@@ -6520,6 +6569,9 @@
 			isa = PBXGroup;
 			children = (
 				46EB2E000047E0 /* TransactionRecordController.swift */,
+				D61E412E2B0F4FB7000AB14D /* DepositHistoryController.swift */,
+				D61E41302B0F5001000AB14D /* DepositInProgressController.swift */,
+				D61E41322B0F53FF000AB14D /* TransactionListBaseController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -6573,6 +6625,7 @@
 				46EB2E000048D0 /* BaseView.swift */,
 				46EB2E000048E0 /* CountDownView.swift */,
 				46EB2E000048F0 /* RoundCornerButton.swift */,
+				D61E412C2B0F36F8000AB14D /* ZJSegmentedView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -7368,6 +7421,34 @@
 			);
 			name = "Pods-ZJAssets_Example";
 			path = "Target Support Files/Pods-ZJAssets_Example";
+			sourceTree = "<group>";
+		};
+		D60F77472B0E0A3C00470E7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D60F77482B0E0A4B00470E7E /* TransactionEmptyCell.swift */,
+				D6793B182B103FB3008D2CD7 /* TransactionItemCell.swift */,
+				D6793B1F2B1047E4008D2CD7 /* NoMoreDataCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D61E41342B0F586E000AB14D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D61E41352B0F588B000AB14D /* DepositInProgressVM.swift */,
+				D6793B1A2B10443C008D2CD7 /* TransactionListCellVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6793B1C2B104486008D2CD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6793B1D2B1044A4008D2CD7 /* TransactionListItem.swift */,
+				D6793B212B10514D008D2CD7 /* TransactionParam.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -10764,11 +10845,14 @@
 			files = (
 				46EB2E0000B8C0 /* API.swift in Sources */,
 				46EB2E0000B5E0 /* AssetsBackgroundHeaderView.swift in Sources */,
+				D60F773C2B0DEE7000470E7E /* DepositTopView.swift in Sources */,
 				46EB2E0000B570 /* AssetsBalanceInfo.swift in Sources */,
 				46EB2E0000B5F0 /* AssetsBalanceView.swift in Sources */,
+				D60F77442B0E09A300470E7E /* DepositIncomeItemCell.swift in Sources */,
 				46EB2E0000B580 /* AssetsBaseInfo.swift in Sources */,
 				46EB2E0000B600 /* AssetsBubbleView.swift in Sources */,
 				46EB2E0000B590 /* AssetsExtraInfo.swift in Sources */,
+				D60F77362B0DD7D800470E7E /* DepositIncomeController.swift in Sources */,
 				46EB2E0000B5A0 /* AssetsHeaderInfo.swift in Sources */,
 				46EB2E0000B610 /* AssetsHeaderView.swift in Sources */,
 				46EB2E0000B5B0 /* AssetsHoldInfo.swift in Sources */,
@@ -10787,9 +10871,14 @@
 				46EB2E0000B800 /* Bundle+Extension.swift in Sources */,
 				46EB2E0000B5D0 /* ChartInfo.swift in Sources */,
 				46EB2E0000B8A0 /* CountDownView.swift in Sources */,
+				D60F77382B0DDA9B00470E7E /* DepositIncomeViewModel.swift in Sources */,
+				D61E41362B0F588B000AB14D /* DepositInProgressVM.swift in Sources */,
+				D60F77422B0E069000470E7E /* DepositIncomeTitleCell.swift in Sources */,
 				D62A85142B0C877F00938CB1 /* TestHeaderInfo.swift in Sources */,
 				46EB2E0000B810 /* Date+Extension.swift in Sources */,
 				46EB2E0000B6B0 /* DepositAssets.swift in Sources */,
+				D6793B202B1047E4008D2CD7 /* NoMoreDataCell.swift in Sources */,
+				D61E41312B0F5001000AB14D /* DepositInProgressController.swift in Sources */,
 				46EB2E0000B690 /* DepositAssetsController.swift in Sources */,
 				46EB2E0000B6C0 /* DepositAssetsHeaderInfo.swift in Sources */,
 				46EB2E0000B780 /* DepositAssetsViewModel.swift in Sources */,
@@ -10801,28 +10890,39 @@
 				46EB2E0000B730 /* DepositItemCell.swift in Sources */,
 				46EB2E0000B6D0 /* DepositListItem.swift in Sources */,
 				46EB2E0000B6E0 /* DepositOrder.swift in Sources */,
+				D60F77402B0E046800470E7E /* DepositIncomeHeaderCell.swift in Sources */,
+				D6793B1B2B10443C008D2CD7 /* TransactionListCellVM.swift in Sources */,
 				46EB2E0000B740 /* DepositPayItemCell.swift in Sources */,
 				46EB2E0000B750 /* DepositRateView.swift in Sources */,
 				46EB2E0000B760 /* DepositSeparatorCell.swift in Sources */,
+				D60F773E2B0E007600470E7E /* DepositIncome.swift in Sources */,
 				46EB2E0000B770 /* DepositSignView.swift in Sources */,
+				D60F77492B0E0A4B00470E7E /* TransactionEmptyCell.swift in Sources */,
 				46EB2E0000B8D0 /* Locale.swift in Sources */,
 				46EB2E0000B820 /* NSNumber+Extension.swift in Sources */,
 				46EB2E0000B8E0 /* Request.swift in Sources */,
+				D60F773A2B0DEB4A00470E7E /* DepositIncomeTipView.swift in Sources */,
 				46EB2E0000B8B0 /* RoundCornerButton.swift in Sources */,
 				46EB2E0000B7C0 /* TestCell.swift in Sources */,
 				46EB2E0000B7D0 /* TestHeaderCell.swift in Sources */,
 				46EB2E0000B7B0 /* TestModel.swift in Sources */,
 				46EB2E0000B7A0 /* TestViewController.swift in Sources */,
+				D6793B1E2B1044A4008D2CD7 /* TransactionListItem.swift in Sources */,
 				46EB2E0000B7E0 /* TestViewModel.swift in Sources */,
 				46EB2E0000B7F0 /* TransactionRecordController.swift in Sources */,
+				D61E41332B0F53FF000AB14D /* TransactionListBaseController.swift in Sources */,
+				D6793B192B103FB3008D2CD7 /* TransactionItemCell.swift in Sources */,
 				46EB2E0000B830 /* UIImage+Extension.swift in Sources */,
 				46EB2E0000B840 /* UIScrollView+Extension.swift in Sources */,
 				46EB2E0000B850 /* UserDefaults+Extension.swift in Sources */,
+				D6793B222B10514D008D2CD7 /* TransactionParam.swift in Sources */,
 				46EB2E0000B980 /* ZJAssets-dummy.m in Sources */,
 				46EB2E0000B8F0 /* ZJAssetsModule.swift in Sources */,
 				46EB2E0000B560 /* ZJAssetsViewController.swift in Sources */,
 				46EB2E0000B670 /* ZJNoSignalView.swift in Sources */,
+				D61E412D2B0F36F8000AB14D /* ZJSegmentedView.swift in Sources */,
 				46EB2E0000B790 /* ZJOrderDetailViewController.swift in Sources */,
+				D61E412F2B0F4FB7000AB14D /* DepositHistoryController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
