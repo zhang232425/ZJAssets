@@ -68,6 +68,62 @@ struct Request {
             .map { ($0.data, $0.sysTime) }
     }
     
+    /// p2p 定期收益明细
+    static func fetchIncomeList(page: Int?) -> Observable<DepositIncomePage?> {
+        API.incomeList(page: page).rx.request()
+            .ensureResponseStatus()
+            .mapObject(ZJRequestResult<DepositIncomePage>.self)
+            .asObservable()
+            .map { $0.data }
+    }
+    
+    /// 交易流水 - 列表
+    static func fetchInprogressList(param: TransactionParam) -> Observable<TransactionListPage?> {
+        API.progressTrade(param).rx.request()
+            .ensureResponseStatus()
+            .mapObject(ZJRequestResult<TransactionListPage>.self)
+            .asObservable()
+            .map { $0.data }
+    }
+    
+    static func fetchHistoryList(param: TransactionParam) -> Observable<TransactionListPage?> {
+        API.historyTrade(param).rx.request()
+            .ensureResponseStatus()
+            .mapObject(ZJRequestResult<TransactionListPage>.self)
+            .asObservable()
+            .map { $0.data }
+    }
+    
+    /*
+    static func showOldOrderEntrance() -> Observable<Bool> {
+        API.oldOrderEntrance.rx.request().ensureResponseStatus()
+            .mapObject(ASRequestResult<TransactionOldEntrance>.self)
+            .asObservable()
+            .map { $0.data?.exist ?? false }
+            .catchErrorJustReturn(false)
+    }
+     */
+    
+    /// 旧版交易记录入口
+    static func showOldOrderEntrance() -> Observable<Bool> {
+        API.oldOrderEntrance.rx.request()
+            .ensureResponseStatus()
+            .mapObject(ZJRequestResult<TransactionOldEntrance>.self)
+            .asObservable()
+            .map { $0.data?.exist ?? false }
+    }
+    
+    /// 交易流水 - 筛选条件
+    static func fetchFilterCategory() -> Observable<FilterCategory?> {
+        API.filterCategory.rx.request()
+            .ensureResponseStatus()
+            .mapObject(ZJRequestResult<FilterCategory>.self)
+            .asObservable()
+            .map { $0.data }
+    }
+    
+    
+    
 }
 
 extension PrimitiveSequence where Trait == SingleTrait, Element == Moya.Response {

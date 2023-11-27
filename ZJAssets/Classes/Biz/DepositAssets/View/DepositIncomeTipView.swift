@@ -7,14 +7,23 @@
 
 import UIKit
 
-class DepositIncomeTipView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+class DepositIncomeTipView: BaseView {
+    
+    private lazy var label = UILabel().then {
+        $0.textColor = UIColor(hexString: "#999999")
+        $0.font = .regular12
+        $0.text = Locale.incomeBottomTip.localized
     }
-    */
+
+    override func setupViews() {
+        
+        label.add(to: self).snp.makeConstraints {
+            $0.top.bottom.equalToSuperview().inset(20.auto)
+            $0.left.greaterThanOrEqualToSuperview()
+            $0.right.lessThanOrEqualToSuperview()
+            $0.centerX.equalToSuperview()
+        }
+        
+    }
 
 }

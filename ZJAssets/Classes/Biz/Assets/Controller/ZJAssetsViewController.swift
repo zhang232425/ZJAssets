@@ -393,11 +393,11 @@ private extension ZJAssetsViewController {
     
     func navigationToTransaction() {
         
-//        bubbleView?.removeFromSuperview()
-//        bubbleView = nil
-//
-//        let vc = TransactionRecordController(type: .all)
-//        navigationController?.pushViewController(vc, animated: true)
+        bubbleView?.removeFromSuperview()
+        bubbleView = nil
+
+        let vc = TransactionRecordController(type: .all)
+        navigationController?.pushViewController(vc, animated: true)
         
     }
     

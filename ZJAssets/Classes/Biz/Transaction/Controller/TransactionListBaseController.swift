@@ -6,24 +6,77 @@
 //
 
 import UIKit
+import ZJHUD
+import JXPagingView
 
-class TransactionListBaseController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class TransactionListBaseController: BaseViewController {
+    
+    private var listViewDidScrollCallBack: ((UIScrollView) -> ())?
+    
+    private(set) var noSignalView: ZJNoSignalView?
+    
+    private(set) lazy var tableView = UITableView().then {
+        $0.separatorStyle = .none
+        $0.estimatedRowHeight = 100
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
-    */
+    
+    override func doProgress(_ executing: Bool) {
+        
+        noSignalView?.removeFromSuperview()
+        
+        view.endEditing(true)
+        
+        if executing {
+            hud?.hide()
+            hud = ZJHUDView()
+            hud?.dimBackground = true
+            hud?.showProgress(in: view)
+        } else {
+            hud?.hide()
+        }
+        
+    }
+    
+    func showNoSignalView(_ :()) {
+        
+        let errorView = noSignalView ?? ZJNoSignalView()
+        
+        errorView.removeFromSuperview()
+        
+        errorView.add(to: view).then {
+            noSignalView = $0
+        }.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+        
+    }
 
+}
+
+extension TransactionListBaseController: UITableViewDelegate {
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        listViewDidScrollCallBack?(scrollView)
+    }
+    
+}
+
+extension TransactionListBaseController: JXPagingViewListViewDelegate {
+    
+    func listView() -> UIView {
+        view
+    }
+    
+    func listScrollView() -> UIScrollView {
+        tableView
+    }
+    
+    func listViewDidScrollCallback(callback: @escaping (UIScrollView) -> ()) {
+        listViewDidScrollCallBack = callback
+    }
+    
 }

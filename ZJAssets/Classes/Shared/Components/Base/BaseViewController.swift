@@ -16,7 +16,7 @@ class BaseViewController: ZJViewController {
     
     let disposeBag = DisposeBag()
     
-    private var hud: ZJHUDView?
+    var hud: ZJHUDView?
     
     var hudSuperView: UIView?
 

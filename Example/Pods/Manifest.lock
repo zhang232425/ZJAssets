@@ -45,9 +45,9 @@ PODS:
   - RxSwiftExt/RxCocoa (6.0.1):
     - RxCocoa (~> 6.0)
     - RxSwiftExt/Core
-  - SDWebImage (5.18.3):
-    - SDWebImage/Core (= 5.18.3)
-  - SDWebImage/Core (5.18.3)
+  - SDWebImage (5.18.5):
+    - SDWebImage/Core (= 5.18.5)
+  - SDWebImage/Core (5.18.5)
   - SnapKit (5.6.0)
   - SwiftDate (6.3.1)
   - SwiftyJSON (5.0.1)
@@ -239,7 +239,7 @@ CHECKOUT OPTIONS:
     :commit: 0b20bf4f5ebd405ef886b5b4e9356be478a1cd8f
     :git: "git@github.com:zhang232425/ZJCommonView.git"
   ZJExtension:
-    :commit: 313cb2b3f18599a312eb50476e1e1636400ef9af
+    :commit: 101fb483e31657f55915ae3dd874badf099a3670
     :git: "git@github.com:zhang232425/ZJExtension.git"
   ZJLogin:
     :commit: 991061ae981055eec598b8fca6f571ab086548e8
@@ -271,7 +271,7 @@ SPEC CHECKSUMS:
   RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
   RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
   RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
-  SDWebImage: 96e0c18ef14010b7485210e92fac888587ebb958
+  SDWebImage: 7ac2b7ddc5e8484c79aa90fc4e30b149d6a2c88f
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e

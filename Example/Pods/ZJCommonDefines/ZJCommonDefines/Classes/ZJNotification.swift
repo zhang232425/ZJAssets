@@ -64,4 +64,7 @@ public extension ZJNotification {
     /// kyc邮箱验证码校验
     static let kycEmailCode = Notification.Name(rawValue: "notification.name.as.kycEmailCode")
     
+    /// 刷新资产页
+    static let refreshAssetsPage = Notification.Name(rawValue: "notification.name.as.refreshAssetsPage")
+    
 }

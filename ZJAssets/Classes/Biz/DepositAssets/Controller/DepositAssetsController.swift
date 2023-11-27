@@ -247,11 +247,17 @@ private extension DepositAssetsController {
     }
     
     func navigationToTransaction() {
-        print(#function)
+        
+        let vc = TransactionRecordController(type: .deposit)
+        navigationController?.pushViewController(vc, animated: true)
+        
     }
     
     func navigationToIncomeList() {
-        print(#function)
+        
+        let vc = DepositIncomeController(assets: viewModel.assetsInfo)
+        navigationController?.pushViewController(vc, animated: true)
+        
     }
     
     func navigationToAppoint() {
