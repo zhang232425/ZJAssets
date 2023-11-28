@@ -62,4 +62,15 @@ extension UserDefaults {
         
     }
     
+    var isDisplayTradeBubble: Bool {
+        
+        set {
+            set(newValue, forKey: #function)
+            synchronize()
+        }
+        
+        get { bool(forKey: #function) }
+        
+    }
+    
 }

@@ -78,7 +78,7 @@ struct Request {
     }
     
     /// 交易流水 - 列表
-    static func fetchInprogressList(param: TransactionParam) -> Observable<TransactionListPage?> {
+    static func fetchInProgressList(param: TransactionParam) -> Observable<TransactionListPage?> {
         API.progressTrade(param).rx.request()
             .ensureResponseStatus()
             .mapObject(ZJRequestResult<TransactionListPage>.self)
@@ -93,16 +93,6 @@ struct Request {
             .asObservable()
             .map { $0.data }
     }
-    
-    /*
-    static func showOldOrderEntrance() -> Observable<Bool> {
-        API.oldOrderEntrance.rx.request().ensureResponseStatus()
-            .mapObject(ASRequestResult<TransactionOldEntrance>.self)
-            .asObservable()
-            .map { $0.data?.exist ?? false }
-            .catchErrorJustReturn(false)
-    }
-     */
     
     /// 旧版交易记录入口
     static func showOldOrderEntrance() -> Observable<Bool> {
@@ -120,9 +110,7 @@ struct Request {
             .mapObject(ZJRequestResult<FilterCategory>.self)
             .asObservable()
             .map { $0.data }
-    }
-    
-    
+    }    
     
 }
 

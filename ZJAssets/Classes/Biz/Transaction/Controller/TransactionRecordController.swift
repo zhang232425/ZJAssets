@@ -101,10 +101,10 @@ extension TransactionRecordController: JXPagingViewDelegate {
         case .all:
             
             if index == 0 {
-                return DepositInProgressController()
+                return InProgressController(category: filterCategory)
             }
             
-            return DepositHistoryController(category: nil)
+            return HistoryViewController(category: filterCategory)
             
         case .deposit:
             

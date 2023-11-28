@@ -1,8 +1,8 @@
 //
-//  DepositInProgressVM.swift
+//  InProgressVM.swift
 //  ZJAssets
 //
-//  Created by Jercan on 2023/11/23.
+//  Created by Jercan on 2023/11/28.
 //
 
 import Foundation
@@ -11,8 +11,8 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-final class DepositInProgressVM {
-    
+final class InProgressVM {
+
     enum SectionItem {
         case item(TransactionListCellVM)
         case noMoreData
@@ -23,9 +23,9 @@ final class DepositInProgressVM {
         case reload
         case loadMore
     }
-
+    
     private(set) lazy var fetchAction: Action<(), Bool> = .init { [weak self] in
-        self?.fetchInProgressList(type: .reload) ?? .just(false)
+        self?.fetchDatas() ?? .just(false)
     }
     
     private(set) lazy var reloadAction: Action<(), Bool> = .init { [weak self] in
@@ -36,21 +36,86 @@ final class DepositInProgressVM {
         self?.fetchInProgressList(type: .loadMore) ?? .just(false)
     }
     
-    private var param = TransactionParam()
+    let datas = BehaviorRelay(value: [SectionModel<String, SectionItem>]())
     
     private let countDown = BehaviorRelay(value: ())
     
     private var bag = DisposeBag()
     
-    let datas = BehaviorRelay(value: [SectionModel<String, SectionItem>]())
+    private var param = TransactionParam()
     
-    init() {
-        param.productType = 1
+    private var filterValues: [Int] {
+        var ret = [0]
+        if let vals = category.productItems?.map({ $0.value }) {
+            ret.append(contentsOf: vals)
+        }
+        return ret
+    }
+    
+    var filterTitles: [String] {
+        var ret = [Locale.all.localized]
+        if let titles = category.productItems?.map({ $0.name }) {
+            ret.append(contentsOf: titles)
+        }
+        return ret
+    }
+    
+    var selectedIndex = 0 {
+        didSet {
+            if selectedIndex != oldValue {
+                param.productType = filterValues[selectedIndex]
+                fetchAction.execute()
+            }
+        }
+    }
+    
+    let category: FilterCategory
+    
+    init(category: FilterCategory) {
+        self.category = category
     }
     
 }
 
-private extension DepositInProgressVM {
+private extension InProgressVM {
+    
+    func fetchDatas() -> Observable<Bool> {
+        Observable.zip(fetchFilterCategory(),
+                       fetchInProgressList(type: .reload))
+        .map { (_, hasNext) in hasNext }
+    }
+
+    func fetchFilterCategory() -> Observable<()> {
+        
+        Observable<Bool>.create { observer -> Disposable in
+            
+            if let items = self.category.productItems, !items.isEmpty {
+                observer.onNext(true)
+            } else {
+                observer.onNext(false)
+            }
+            
+            observer.onCompleted()
+            
+            return Disposables.create()
+            
+        }.flatMap {
+            
+            $0 ? .just(()) : Request.fetchFilterCategory().map {
+                
+                if let items = $0?.productItems, !items.isEmpty {
+                    self.category.productItems = items
+                }
+                
+                if let items = $0?.tradeItems, !items.isEmpty {
+                    self.category.tradeItems = items
+                }
+                
+            }
+            
+        }
+        
+    }
     
     func fetchInProgressList(type: ActionType) -> Observable<Bool> {
         
@@ -62,6 +127,7 @@ private extension DepositInProgressVM {
                 return .just(false)
             }
         }
+        
         return Request.fetchInProgressList(param: param).map { self.buildSections(list: $0, type: type) }
         
     }
@@ -114,6 +180,11 @@ private extension DepositInProgressVM {
         countDownIfNeeded()
         
     }
+    
+    
+}
+
+private extension InProgressVM {
     
     func countDownIfNeeded() {
         

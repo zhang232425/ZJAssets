@@ -47,6 +47,33 @@ class ZJModalPresentationController: UIPresentationController {
         
     }
     
+    override func presentationTransitionWillBegin() {
+        
+        containerView?.addSubview(presentedView!)
+        
+        if tapToDismiss || dimColor != nil {
+            setupDimBackgroundView()
+            animateDimmingView()
+        }
+        
+    }
+    
+    override func dismissalTransitionWillBegin() {
+        
+        if tapToDismiss || dimColor != nil {
+            
+            presentedViewController.transitionCoordinator?.animate(alongsideTransition: { [weak self] _ in
+                self?.dimView.alpha = 0
+            })
+            
+        }
+        
+    }
+    
+    override func containerViewWillLayoutSubviews() {
+        presentedView?.frame = frameOfPresentedViewInContainerView
+    }
+    
 }
 
 private extension ZJModalPresentationController {

@@ -1,18 +1,18 @@
 //
-//  DepositHistoryVM.swift
+//  HistoryVM.swift
 //  ZJAssets
 //
-//  Created by Jercan on 2023/11/24.
+//  Created by Jercan on 2023/11/28.
 //
 
 import Foundation
+import Action
 import RxSwift
 import RxCocoa
 import RxDataSources
-import Action
 
-final class DepositHistoryVM {
-
+final class HistoryVM {
+    
     enum SectionItem {
         case item(TransactionListCellVM)
         case noMoreData
@@ -23,6 +23,8 @@ final class DepositHistoryVM {
         case reload
         case loadMore
     }
+    
+    typealias Section = SectionModel<String, SectionItem>
     
     private(set) lazy var fetchAction: Action<(), Bool> = .init { [weak self] in
         self?.fetchDatas() ?? .just(false)
@@ -36,43 +38,51 @@ final class DepositHistoryVM {
         self?.fetchHistoryList(type: .loadMore) ?? .just(false)
     }
     
+    private(set) var isPeriodSelect = false
+    
     private(set) var showOldEntrance = false {
         didSet { isSetOldEntrance = true }
     }
     
-    var selectedType = 0 {
-        didSet {
-            if selectedType != oldValue {
-                param.tradeType = selectedType
-                fetchAction.execute()
-            }
-        }
-    }
-    
-    let category: FilterCategory?
-    
-    let filterPeriodVM = TransactionPeriodVM(type: .deposit)
-    
-    private(set) var isPeriodSelect = false
-    
     private var isSetOldEntrance = false
-    
-    private var param = TransactionParam()
     
     private let countDown = BehaviorRelay(value: ())
     
     private var bag = DisposeBag()
     
-    let datas = BehaviorRelay(value: [SectionModel<String, SectionItem>]())
+    private var param = TransactionParam()
     
-    init(_ category: FilterCategory?) {
-        self.category = category
-        param.productType = 1
+    var filterParam = TransactionFilterParam(productType: 0, tradeType: 0) {
+        
+        didSet {
+            
+            if (filterParam.productType != oldValue.productType) ||
+                (filterParam.tradeType != oldValue.tradeType) {
+                
+                param.productType = filterParam.productType
+                param.tradeType = filterParam.tradeType
+                
+                fetchAction.execute()
+                
+            }
+            
+        }
+        
+    }
+    
+    let filterPeriodVM = TransactionPeriodVM(type: .all)
+    
+    let datas = BehaviorRelay(value: [Section]())
+    
+    let filterCategory: FilterCategory
+    
+    init(_ category: FilterCategory) {
+        filterCategory = category
     }
     
 }
 
-extension DepositHistoryVM {
+extension HistoryVM {
     
     func handlePeriodSelect(start: Date?, end: Date?) {
         
@@ -88,23 +98,15 @@ extension DepositHistoryVM {
     
 }
 
-private extension DepositHistoryVM {
+private extension HistoryVM {
     
     func fetchDatas() -> Observable<Bool> {
-        
-        if category == nil {
-            return fetchHistoryList(type: .reload)
-        }
-        
-        return Observable.zip(fetchFilterCategory(),
-                              fetchHistoryList(type: .reload),
-                              fetchOldEntrance())
-        .map { (_, hasNext, _) in
-            return hasNext
-        }
-        
+        Observable.zip(fetchFilterCategory(),
+                       fetchHistoryList(type: .reload),
+                       fetchOldEntrance())
+            .map { (_, hasNext, _) in hasNext }
     }
-
+    
     func fetchOldEntrance() -> Observable<()> {
         Observable.just(isSetOldEntrance).flatMap {
             $0 ? .just(()) : Request.showOldOrderEntrance().map {
@@ -113,12 +115,11 @@ private extension DepositHistoryVM {
         }
     }
     
-
     func fetchFilterCategory() -> Observable<()> {
         
         Observable<Bool>.create { observer -> Disposable in
             
-            if let items = self.category?.tradeItems, !items.isEmpty {
+            if let items = self.filterCategory.tradeItems, !items.isEmpty {
                 observer.onNext(true)
             } else {
                 observer.onNext(false)
@@ -133,11 +134,11 @@ private extension DepositHistoryVM {
             $0 ? .just(()) : Request.fetchFilterCategory().map {
                 
                 if let items = $0?.productItems, !items.isEmpty {
-                    self.category?.productItems = items
+                    self.filterCategory.productItems = items
                 }
                 
                 if let items = $0?.tradeItems, !items.isEmpty {
-                    self.category?.tradeItems = items
+                    self.filterCategory.tradeItems = items
                 }
                 
             }
@@ -145,7 +146,6 @@ private extension DepositHistoryVM {
         }
         
     }
-    
     
     func fetchHistoryList(type: ActionType) -> Observable<Bool> {
         
@@ -161,7 +161,7 @@ private extension DepositHistoryVM {
         return Request.fetchHistoryList(param: param).map { self.buildSections(list: $0, type: type) }
         
     }
-
+    
     func buildSections(list: TransactionListPage?, type: ActionType) -> Bool {
         
         param.page = list?.nextPage
@@ -169,7 +169,6 @@ private extension DepositHistoryVM {
         let hasNext = list?.nextPage == nil ? false : true
         
         switch type {
-            
         case .reload:
             
             datas.accept([])
@@ -309,5 +308,5 @@ private extension DepositHistoryVM {
         bag = DisposeBag()
     }
     
-    
 }
+

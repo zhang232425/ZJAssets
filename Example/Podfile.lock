@@ -160,6 +160,7 @@ DEPENDENCIES:
   - "ZJCommonView (from `git@github.com:zhang232425/ZJCommonView.git`, branch `main`)"
   - "ZJExtension (from `git@github.com:zhang232425/ZJExtension.git`, branch `main`)"
   - "ZJLogin (from `git@github.com:zhang232425/ZJLogin.git`, branch `main`)"
+  - "ZJModalTransition (from `git@github.com:zhang232425/ZJModalTransition.git`, branch `main`)"
   - "ZJRefresh (from `git@github.com:zhang232425/ZJRefresh.git`, branch `main`)"
   - "ZJRoutableTargets (from `git@github.com:zhang232425/ZJRoutableTargets.git`, branch `main`)"
 
@@ -172,7 +173,6 @@ SPEC REPOS:
     - ZJLocalAuth
     - ZJLocalizable
     - ZJLoginManager
-    - ZJModalTransition
     - ZJRegion
     - ZJRequest
     - ZJRouter
@@ -221,6 +221,9 @@ EXTERNAL SOURCES:
   ZJLogin:
     :branch: main
     :git: "git@github.com:zhang232425/ZJLogin.git"
+  ZJModalTransition:
+    :branch: main
+    :git: "git@github.com:zhang232425/ZJModalTransition.git"
   ZJRefresh:
     :branch: main
     :git: "git@github.com:zhang232425/ZJRefresh.git"
@@ -244,6 +247,9 @@ CHECKOUT OPTIONS:
   ZJLogin:
     :commit: 991061ae981055eec598b8fca6f571ab086548e8
     :git: "git@github.com:zhang232425/ZJLogin.git"
+  ZJModalTransition:
+    :commit: 7539c5f6ecca65a4a05c0285d054e5ac9e56d3d0
+    :git: "git@github.com:zhang232425/ZJModalTransition.git"
   ZJRefresh:
     :commit: d2855ff0b65e3142eb90a561827b7dd07fec044d
     :git: "git@github.com:zhang232425/ZJRefresh.git"
@@ -289,7 +295,7 @@ SPEC CHECKSUMS:
   ZJLocalizable: 3c925ba648064d1da4ddc70c29335d4029fc0445
   ZJLogin: 6d267f5fed163c78d2aa1772e271910bd0d9b7fd
   ZJLoginManager: 697de4822a7ff38cf60592faece276d427de9ed7
-  ZJModalTransition: 1d897c1a648e799713ca6d1bf888a73d1851e7a7
+  ZJModalTransition: e7db190e128cf9cf352d89b3418505ffd3096a46
   ZJRefresh: 2ab367241aea892e43afa57498d07c47f4c38897
   ZJRegion: e077f30a1ebf32398f2e9af9380a7fe1ab4ffc61
   ZJRequest: cbca3f9b01504851babe3d409121abe1e9560f1b
@@ -297,6 +303,6 @@ SPEC CHECKSUMS:
   ZJRouter: 2ae914db45b7844d11cb186d4de4dff75a5085b9
   ZJValidator: f1f4767a1a433ca41d2f33e0207172aa48afe58e
 
-PODFILE CHECKSUM: 86713dace3136b92f98e14a7c4976cb75e4b2cc6
+PODFILE CHECKSUM: 39a7289142ba1285edc5fb9c18d38fbcd61d1749
 
 COCOAPODS: 1.11.2

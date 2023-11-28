@@ -237,23 +237,57 @@ private extension DepositHistoryController {
     
     func navigationToPeriod() {
         
+        let vc = TransactionPeriodController(viewModel: viewModel.filterPeriodVM) { [weak self] in
+            
+            switch $0 {
+            case .month(let start, let end):
+                
+                self?.titleView.periodTitle = start?.monthFormat
+                
+                self?.viewModel.handlePeriodSelect(start: start, end: end)
+                
+            case .period(let start, let end):
+                
+                if let start = start?.periodFormat, let end = end?.periodFormat {
+                    self?.titleView.periodTitle = "\(start)-\(end)"
+                }
+                
+                self?.viewModel.handlePeriodSelect(start: start, end: end?.nextDay)
+                
+            }
+            
+        }
+        
+        present(vc, animated: true)
         
     }
     
     func navigationToFilter() {
         
+        guard let category = viewModel.category else { return }
         
+        let vc = TransactionTypeController(category: category,
+                                           selectedType: viewModel.selectedType) { [weak self] in
+
+            self?.viewModel.selectedType = $0.value
+
+            self?.titleView.typeTitle = $0.name
+
+        }
+
+        present(vc, animated: true)
         
     }
     
     @objc func navigationToOldHistory() {
-        
-        
-        
+            
+    
     }
     
     func navigationToHistoryDetail(item: TransactionListItem) {
         
+        let vc = ZJOrderDetailViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     
@@ -273,6 +307,16 @@ extension DepositHistoryController {
             return UITableViewAutomaticDimension
         }
         
+    }
+    
+}
+
+extension DepositHistoryController {
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if !viewModel.isPeriodSelect {
+            titleView.periodTitle = dataSource[indexPath.section].model
+        }
     }
     
 }

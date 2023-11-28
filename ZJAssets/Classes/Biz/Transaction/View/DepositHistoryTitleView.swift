@@ -61,11 +61,11 @@ class DepositHistoryTitleView: BaseView {
 private extension DepositHistoryTitleView {
     
     @objc func periodClick() {
-        typeClickHandler?()
+        periodClickHandler?()
     }
     
     @objc func typeClick() {
-        periodClickHandler?()
+        typeClickHandler?()
     }
     
 }

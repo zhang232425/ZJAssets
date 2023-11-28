@@ -1,0 +1,32 @@
+{
+  "name": "ZJModalTransition",
+  "version": "0.1.0",
+  "summary": "A short description of ZJModalTransition.",
+  "homepage": "https://github.com/51930184@qq.com/ZJModalTransition",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "51930184@qq.com": "yonathan@asetku.com"
+  },
+  "source": {
+    "git": "https://github.com/51930184@qq.com/ZJModalTransition.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ZJModalTransition/Classes/**/*",
+  "resource_bundles": {
+    "ZJModalTransition": [
+      "ZJModalTransition/Assets/**/*"
+    ]
+  },
+  "static_framework": true,
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  }
+}
