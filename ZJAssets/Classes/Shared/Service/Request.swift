@@ -110,7 +110,53 @@ struct Request {
             .mapObject(ZJRequestResult<FilterCategory>.self)
             .asObservable()
             .map { $0.data }
-    }    
+    }
+    
+//    static func getHistoryDetail(id: String) -> Single<ASRequestResult<HistoryDetailModel>> {
+//        return AssetsAPI.getHistoryDetail(historyId: id).rx.request().ensureResponseStatus().mapObject(ASRequestResult<HistoryDetailModel>.self)
+//    }
+
+    /// 历史记录详情
+    static func getHistoryDetail(id: String) -> Observable<HistoryDetailModel?> {
+        API.getHistoryDetail(historyId: id).rx.request()
+            .ensureResponseStatus()
+            .mapObject(ZJRequestResult<HistoryDetailModel>.self)
+            .asObservable()
+            .map { $0.data }
+    }
+    
+    /// 订单详情
+    static func getOrderDetail(orderId: String) -> Observable<OrderModel?> {
+        API.getOrderDetail(orderId: orderId).rx.request()
+            .ensureResponseStatus()
+            .mapObject(ZJRequestResult<OrderModel>.self)
+            .map { $0.data }
+            .asObservable()
+    }
+    
+    /**
+     // 切换自动续投功能
+     static func toggleAutoLend(orderId: String) -> Single<ASRequestResult<Bool>> {
+         return AssetsAPI.toggleAutoLend(orderId: orderId).rx.request().ensureResponseStatus().mapObject(ASRequestResult<Bool>.self)
+     }
+     */
+    /// 自动续投按钮
+    static func toggleAutoLend(orderId: String) -> Observable<Bool> {
+        API.toggleAutoLend(orderId: orderId).rx.request()
+            .ensureResponseStatus()
+            .mapObject(ZJRequestResult<Bool>.self)
+            .map { $0.data ?? false }
+            .asObservable()
+    }
+    
+    /// 订单交易历史
+    static func orderHistory(orderId: String) -> Observable<TranscationRecordAlertResult?> {
+        API.orderHistory(orderId: orderId).rx.request()
+            .mapObject(ZJRequestResult<TranscationRecordAlertResult>.self)
+            .map { $0.data }
+            .asObservable()
+    }
+    
     
 }
 

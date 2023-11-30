@@ -144,6 +144,20 @@ private extension DepositInProgressController {
     
     func navigationToHistoryDetail(item: TransactionListItem) {
         
+        switch item.jumpType {
+            
+        case .withdrawDetail:
+            let vc = HistoryDetailViewController(id: item.refId)
+            navigationController?.pushViewController(vc, animated: true)
+            
+        case .depositDetail:
+            let vc = OrderDetailViewController(productId: item.productId, orderId: item.refId)
+            navigationController?.pushViewController(vc, animated: true)
+            
+        default:
+            break
+            
+        }
         
     }
     

@@ -196,7 +196,7 @@ private extension DepositIncomeController {
     
     func navigationOrderDetail(info: DepositIncome) {
         
-        let vc = ZJOrderDetailViewController()
+        let vc = OrderDetailViewController(productId: info.productId, orderId: info.orderId)
         navigationController?.pushViewController(vc, animated: true)
         
     }

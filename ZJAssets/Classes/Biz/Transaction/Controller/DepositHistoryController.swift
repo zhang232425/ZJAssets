@@ -286,9 +286,21 @@ private extension DepositHistoryController {
     
     func navigationToHistoryDetail(item: TransactionListItem) {
         
-        let vc = ZJOrderDetailViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
-        
+        switch item.jumpType {
+            
+        case .withdrawDetail:
+            let vc = HistoryDetailViewController(id: item.refId)
+            navigationController?.pushViewController(vc, animated: true)
+            
+        case .depositDetail:
+            let vc = OrderDetailViewController(productId: item.productId, orderId: item.refId)
+            navigationController?.pushViewController(vc, animated: true)
+            
+        default:
+            break
+            
+        }
+
     }
     
 }

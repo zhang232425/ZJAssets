@@ -1154,7 +1154,7 @@
 		46EB2E0000BA20 /* DepositTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00004730 /* DepositTopView.swift */; };
 		46EB2E0000BA30 /* DepositAssetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00004750 /* DepositAssetsViewModel.swift */; };
 		46EB2E0000BA40 /* DepositIncomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00004760 /* DepositIncomeViewModel.swift */; };
-		46EB2E0000BA50 /* ZJOrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00004790 /* ZJOrderDetailViewController.swift */; };
+		46EB2E0000BA50 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00004790 /* OrderDetailViewController.swift */; };
 		46EB2E0000BA60 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000047C0 /* TestViewController.swift */; };
 		46EB2E0000BA70 /* TestHeaderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000047E0 /* TestHeaderInfo.swift */; };
 		46EB2E0000BA80 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000047F0 /* TestModel.swift */; };
@@ -1433,6 +1433,28 @@
 		D60A62222B15DC70009270D9 /* TransactionFilterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A62212B15DC70009270D9 /* TransactionFilterVM.swift */; };
 		D60A62242B15DCCB009270D9 /* TransactionFilterTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A62232B15DCCB009270D9 /* TransactionFilterTitleView.swift */; };
 		D60A62262B15DD1C009270D9 /* TransactionFilterItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A62252B15DD1C009270D9 /* TransactionFilterItemCell.swift */; };
+		D64ABA432B16DD8F00F01EA1 /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64ABA422B16DD8F00F01EA1 /* HistoryDetailViewController.swift */; };
+		D64ABA462B16E25C00F01EA1 /* HistoryDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64ABA452B16E25C00F01EA1 /* HistoryDetailVM.swift */; };
+		D64ABA492B17148A00F01EA1 /* HistoryDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64ABA482B17148A00F01EA1 /* HistoryDetailModel.swift */; };
+		D64ABA4B2B17241300F01EA1 /* HistoryDetailHeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64ABA4A2B17241300F01EA1 /* HistoryDetailHeaderModel.swift */; };
+		D64ABA4E2B1726EB00F01EA1 /* Namespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64ABA4D2B1726EB00F01EA1 /* Namespace.swift */; };
+		D64ABA502B17291F00F01EA1 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64ABA4F2B17291F00F01EA1 /* Double+Extension.swift */; };
+		D64ABA542B172B4500F01EA1 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64ABA532B172B4500F01EA1 /* HistoryModel.swift */; };
+		D64ABA572B1736B800F01EA1 /* BottomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64ABA562B1736B800F01EA1 /* BottomButtonView.swift */; };
+		D64ABA592B17398300F01EA1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64ABA582B17398300F01EA1 /* UIView+Extension.swift */; };
+		D64ABA5B2B173A1600F01EA1 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64ABA5A2B173A1600F01EA1 /* UIButton.swift */; };
+		D64ABA5F2B17448500F01EA1 /* HistoryDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64ABA5E2B17448500F01EA1 /* HistoryDetailHeaderView.swift */; };
+		D64ABA612B17467400F01EA1 /* HistoryDetailHeaderWithdrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64ABA602B17467400F01EA1 /* HistoryDetailHeaderWithdrawView.swift */; };
+		D64ABA632B17474F00F01EA1 /* HistoryDetailHeaderRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64ABA622B17474F00F01EA1 /* HistoryDetailHeaderRecordView.swift */; };
+		D64ABA652B174B0D00F01EA1 /* HistoryDetailRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64ABA642B174B0D00F01EA1 /* HistoryDetailRecordView.swift */; };
+		D64ABA672B175BF400F01EA1 /* OrderDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64ABA662B175BF400F01EA1 /* OrderDetailVM.swift */; };
+		D6B749EA2B183A95005481E7 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B749E92B183A95005481E7 /* OrderModel.swift */; };
+		D6B749EC2B186A75005481E7 /* OrderDetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B749EB2B186A75005481E7 /* OrderDetailItem.swift */; };
+		D6B749EE2B186BB3005481E7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B749ED2B186BB3005481E7 /* String+Extension.swift */; };
+		D6B749F02B186EAA005481E7 /* OrderDetailVM+Handle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B749EF2B186EAA005481E7 /* OrderDetailVM+Handle.swift */; };
+		D6B749F22B187AA3005481E7 /* OrderDetailTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B749F12B187AA3005481E7 /* OrderDetailTransactionView.swift */; };
+		D6B749F42B187D6F005481E7 /* TranscationRecordAlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B749F32B187D6F005481E7 /* TranscationRecordAlertModel.swift */; };
+		D6B749F62B187E02005481E7 /* TranscationRecordsAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B749F52B187E02005481E7 /* TranscationRecordsAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -3556,7 +3578,7 @@
 		46EB2E00004730 /* DepositTopView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DepositTopView.swift; sourceTree = "<group>"; };
 		46EB2E00004750 /* DepositAssetsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DepositAssetsViewModel.swift; sourceTree = "<group>"; };
 		46EB2E00004760 /* DepositIncomeViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DepositIncomeViewModel.swift; sourceTree = "<group>"; };
-		46EB2E00004790 /* ZJOrderDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZJOrderDetailViewController.swift; sourceTree = "<group>"; };
+		46EB2E00004790 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
 		46EB2E000047C0 /* TestViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		46EB2E000047E0 /* TestHeaderInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestHeaderInfo.swift; sourceTree = "<group>"; };
 		46EB2E000047F0 /* TestModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
@@ -4156,6 +4178,28 @@
 		D60A62212B15DC70009270D9 /* TransactionFilterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFilterVM.swift; sourceTree = "<group>"; };
 		D60A62232B15DCCB009270D9 /* TransactionFilterTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFilterTitleView.swift; sourceTree = "<group>"; };
 		D60A62252B15DD1C009270D9 /* TransactionFilterItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFilterItemCell.swift; sourceTree = "<group>"; };
+		D64ABA422B16DD8F00F01EA1 /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
+		D64ABA452B16E25C00F01EA1 /* HistoryDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailVM.swift; sourceTree = "<group>"; };
+		D64ABA482B17148A00F01EA1 /* HistoryDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailModel.swift; sourceTree = "<group>"; };
+		D64ABA4A2B17241300F01EA1 /* HistoryDetailHeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailHeaderModel.swift; sourceTree = "<group>"; };
+		D64ABA4D2B1726EB00F01EA1 /* Namespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namespace.swift; sourceTree = "<group>"; };
+		D64ABA4F2B17291F00F01EA1 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		D64ABA532B172B4500F01EA1 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		D64ABA562B1736B800F01EA1 /* BottomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButtonView.swift; sourceTree = "<group>"; };
+		D64ABA582B17398300F01EA1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D64ABA5A2B173A1600F01EA1 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		D64ABA5E2B17448500F01EA1 /* HistoryDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailHeaderView.swift; sourceTree = "<group>"; };
+		D64ABA602B17467400F01EA1 /* HistoryDetailHeaderWithdrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailHeaderWithdrawView.swift; sourceTree = "<group>"; };
+		D64ABA622B17474F00F01EA1 /* HistoryDetailHeaderRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailHeaderRecordView.swift; sourceTree = "<group>"; };
+		D64ABA642B174B0D00F01EA1 /* HistoryDetailRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailRecordView.swift; sourceTree = "<group>"; };
+		D64ABA662B175BF400F01EA1 /* OrderDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailVM.swift; sourceTree = "<group>"; };
+		D6B749E92B183A95005481E7 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		D6B749EB2B186A75005481E7 /* OrderDetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailItem.swift; sourceTree = "<group>"; };
+		D6B749ED2B186BB3005481E7 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D6B749EF2B186EAA005481E7 /* OrderDetailVM+Handle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrderDetailVM+Handle.swift"; sourceTree = "<group>"; };
+		D6B749F12B187AA3005481E7 /* OrderDetailTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailTransactionView.swift; sourceTree = "<group>"; };
+		D6B749F32B187D6F005481E7 /* TranscationRecordAlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscationRecordAlertModel.swift; sourceTree = "<group>"; };
+		D6B749F52B187E02005481E7 /* TranscationRecordsAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscationRecordsAlert.swift; sourceTree = "<group>"; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76D7F1684ADF94AB3417C503AD83AD6 /* Pods-ZJAssets_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZJAssets_Example"; path = Pods_ZJAssets_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C5BC805E4D0610414D6D3C234F2DDB /* ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRequest; path = ZJRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6416,6 +6460,7 @@
 		46EB2E00004410 /* Biz */ = {
 			isa = PBXGroup;
 			children = (
+				D64ABA512B172B2E00F01EA1 /* History */,
 				46EB2E00004420 /* Assets */,
 				46EB2E000045A0 /* DepositAssets */,
 				46EB2E00004770 /* OrderDetail */,
@@ -6455,6 +6500,7 @@
 				46EB2E000044A0 /* AssetsHoldInfo.swift */,
 				46EB2E000044B0 /* AssetsSecureProtocol.swift */,
 				46EB2E000044C0 /* ChartInfo.swift */,
+				D6B749E92B183A95005481E7 /* OrderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -6550,6 +6596,9 @@
 		46EB2E00004770 /* OrderDetail */ = {
 			isa = PBXGroup;
 			children = (
+				D64ABA552B1736A400F01EA1 /* View */,
+				D64ABA472B17146700F01EA1 /* Model */,
+				D64ABA442B16E21F00F01EA1 /* ViewModel */,
 				46EB2E00004780 /* Controller */,
 			);
 			path = OrderDetail;
@@ -6558,7 +6607,9 @@
 		46EB2E00004780 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00004790 /* ZJOrderDetailViewController.swift */,
+				46EB2E00004790 /* OrderDetailViewController.swift */,
+				D64ABA422B16DD8F00F01EA1 /* HistoryDetailViewController.swift */,
+				D6B749F52B187E02005481E7 /* TranscationRecordsAlert.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -6694,6 +6745,10 @@
 				46EB2E00004A50 /* UIImage+Extension.swift */,
 				46EB2E00004A60 /* UIScrollView+Extension.swift */,
 				46EB2E00004A70 /* UserDefaults+Extension.swift */,
+				D64ABA4F2B17291F00F01EA1 /* Double+Extension.swift */,
+				D64ABA582B17398300F01EA1 /* UIView+Extension.swift */,
+				D64ABA5A2B173A1600F01EA1 /* UIButton.swift */,
+				D6B749ED2B186BB3005481E7 /* String+Extension.swift */,
 			);
 			name = Extension;
 			path = ZJAssets/Classes/Extension;
@@ -6702,6 +6757,7 @@
 		46EB2E00004A80 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D64ABA4C2B17268F00F01EA1 /* Other */,
 				46EB2E00004A90 /* Components */,
 				46EB2E00004B30 /* Service */,
 			);
@@ -7530,6 +7586,64 @@
 			);
 			name = "Pods-ZJAssets_Example";
 			path = "Target Support Files/Pods-ZJAssets_Example";
+			sourceTree = "<group>";
+		};
+		D64ABA442B16E21F00F01EA1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D64ABA452B16E25C00F01EA1 /* HistoryDetailVM.swift */,
+				D64ABA662B175BF400F01EA1 /* OrderDetailVM.swift */,
+				D6B749EF2B186EAA005481E7 /* OrderDetailVM+Handle.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D64ABA472B17146700F01EA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D64ABA482B17148A00F01EA1 /* HistoryDetailModel.swift */,
+				D64ABA4A2B17241300F01EA1 /* HistoryDetailHeaderModel.swift */,
+				D6B749EB2B186A75005481E7 /* OrderDetailItem.swift */,
+				D6B749F32B187D6F005481E7 /* TranscationRecordAlertModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D64ABA4C2B17268F00F01EA1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D64ABA4D2B1726EB00F01EA1 /* Namespace.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		D64ABA512B172B2E00F01EA1 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				D64ABA522B172B3600F01EA1 /* Model */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		D64ABA522B172B3600F01EA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D64ABA532B172B4500F01EA1 /* HistoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D64ABA552B1736A400F01EA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D64ABA562B1736B800F01EA1 /* BottomButtonView.swift */,
+				D64ABA5E2B17448500F01EA1 /* HistoryDetailHeaderView.swift */,
+				D64ABA602B17467400F01EA1 /* HistoryDetailHeaderWithdrawView.swift */,
+				D64ABA622B17474F00F01EA1 /* HistoryDetailHeaderRecordView.swift */,
+				D64ABA642B174B0D00F01EA1 /* HistoryDetailRecordView.swift */,
+				D6B749F12B187AA3005481E7 /* OrderDetailTransactionView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -10942,10 +11056,12 @@
 				46EB2E0000B880 /* AssetsNavigationBar.swift in Sources */,
 				46EB2E0000B890 /* AssetsProgressView.swift in Sources */,
 				46EB2E0000B800 /* AssetsSecureProtocol.swift in Sources */,
+				D64ABA4B2B17241300F01EA1 /* HistoryDetailHeaderModel.swift in Sources */,
 				46EB2E0000B8A0 /* AssetsUnpayView.swift in Sources */,
 				46EB2E0000B8C0 /* AssetsViewModel.swift in Sources */,
 				46EB2E0000BC90 /* BaseScrollViewController.swift in Sources */,
 				46EB2E0000BCA0 /* BaseTableViewCell.swift in Sources */,
+				D64ABA652B174B0D00F01EA1 /* HistoryDetailRecordView.swift in Sources */,
 				46EB2E0000BCC0 /* BaseView.swift in Sources */,
 				46EB2E0000BCB0 /* BaseViewController.swift in Sources */,
 				46EB2E0000BC30 /* Bundle+Extension.swift in Sources */,
@@ -10956,7 +11072,10 @@
 				46EB2E0000B8D0 /* DepositAssetsController.swift in Sources */,
 				46EB2E0000B910 /* DepositAssetsHeaderInfo.swift in Sources */,
 				46EB2E0000BA30 /* DepositAssetsViewModel.swift in Sources */,
+				D6B749EC2B186A75005481E7 /* OrderDetailItem.swift in Sources */,
+				D64ABA592B17398300F01EA1 /* UIView+Extension.swift in Sources */,
 				D60A620E2B159170009270D9 /* MonthPickerView.swift in Sources */,
+				D6B749EA2B183A95005481E7 /* OrderModel.swift in Sources */,
 				46EB2E0000B950 /* DepositBaseCell.swift in Sources */,
 				46EB2E0000B8E0 /* DepositBaseController.swift in Sources */,
 				46EB2E0000B960 /* DepositEmptyCell.swift in Sources */,
@@ -10965,27 +11084,37 @@
 				46EB2E0000BAD0 /* DepositHistoryController.swift in Sources */,
 				46EB2E0000BB70 /* DepositHistoryTitleView.swift in Sources */,
 				46EB2E0000BBE0 /* DepositHistoryVM.swift in Sources */,
+				D6B749F02B186EAA005481E7 /* OrderDetailVM+Handle.swift in Sources */,
 				46EB2E0000B920 /* DepositIncome.swift in Sources */,
 				D60A62122B15BD96009270D9 /* HistoryViewController.swift in Sources */,
 				46EB2E0000B8F0 /* DepositIncomeController.swift in Sources */,
 				46EB2E0000B990 /* DepositIncomeHeaderCell.swift in Sources */,
 				46EB2E0000B9A0 /* DepositIncomeItemCell.swift in Sources */,
+				D64ABA5F2B17448500F01EA1 /* HistoryDetailHeaderView.swift in Sources */,
 				46EB2E0000B9B0 /* DepositIncomeTipView.swift in Sources */,
 				46EB2E0000B9C0 /* DepositIncomeTitleCell.swift in Sources */,
+				D64ABA672B175BF400F01EA1 /* OrderDetailVM.swift in Sources */,
 				46EB2E0000BA40 /* DepositIncomeViewModel.swift in Sources */,
 				D60A621E2B15DAEE009270D9 /* HistoryBubbleView.swift in Sources */,
 				D60A62182B15DA0C009270D9 /* HistoryTitleView.swift in Sources */,
 				46EB2E0000BAE0 /* DepositInProgressController.swift in Sources */,
 				46EB2E0000BBF0 /* DepositInProgressVM.swift in Sources */,
+				D64ABA632B17474F00F01EA1 /* HistoryDetailHeaderRecordView.swift in Sources */,
+				D64ABA432B16DD8F00F01EA1 /* HistoryDetailViewController.swift in Sources */,
 				46EB2E0000B9D0 /* DepositItemCell.swift in Sources */,
 				D60A621A2B15DA81009270D9 /* HistoryVM.swift in Sources */,
 				46EB2E0000B930 /* DepositListItem.swift in Sources */,
+				D64ABA542B172B4500F01EA1 /* HistoryModel.swift in Sources */,
 				46EB2E0000B940 /* DepositOrder.swift in Sources */,
 				46EB2E0000B9E0 /* DepositPayItemCell.swift in Sources */,
 				46EB2E0000B9F0 /* DepositRateView.swift in Sources */,
 				46EB2E0000BA00 /* DepositSeparatorCell.swift in Sources */,
 				D60A62222B15DC70009270D9 /* TransactionFilterVM.swift in Sources */,
+				D6B749F62B187E02005481E7 /* TranscationRecordsAlert.swift in Sources */,
 				46EB2E0000BA10 /* DepositSignView.swift in Sources */,
+				D64ABA492B17148A00F01EA1 /* HistoryDetailModel.swift in Sources */,
+				D64ABA5B2B173A1600F01EA1 /* UIButton.swift in Sources */,
+				D64ABA612B17467400F01EA1 /* HistoryDetailHeaderWithdrawView.swift in Sources */,
 				D60A620A2B158E6B009270D9 /* PeriodsPickerView.swift in Sources */,
 				46EB2E0000BA20 /* DepositTopView.swift in Sources */,
 				46EB2E0000BD10 /* Locale.swift in Sources */,
@@ -11006,10 +11135,12 @@
 				46EB2E0000BBB0 /* TransactionItemCell.swift in Sources */,
 				46EB2E0000BAF0 /* TransactionListBaseController.swift in Sources */,
 				46EB2E0000BC00 /* TransactionListCellVM.swift in Sources */,
+				D64ABA4E2B1726EB00F01EA1 /* Namespace.swift in Sources */,
 				46EB2E0000BB40 /* TransactionListItem.swift in Sources */,
 				46EB2E0000BB50 /* TransactionOldEntrance.swift in Sources */,
 				46EB2E0000BB60 /* TransactionParam.swift in Sources */,
 				D60A62142B15BE27009270D9 /* InProgressVM.swift in Sources */,
+				D6B749EE2B186BB3005481E7 /* String+Extension.swift in Sources */,
 				46EB2E0000BB00 /* TransactionPeriodController.swift in Sources */,
 				46EB2E0000BC10 /* TransactionPeriodVM.swift in Sources */,
 				46EB2E0000BB10 /* TransactionRecordController.swift in Sources */,
@@ -11018,17 +11149,22 @@
 				46EB2E0000BBC0 /* TransactionTitleSelectView.swift in Sources */,
 				46EB2E0000BBD0 /* TransactionTypeCell.swift in Sources */,
 				46EB2E0000BB20 /* TransactionTypeController.swift in Sources */,
+				D64ABA572B1736B800F01EA1 /* BottomButtonView.swift in Sources */,
+				D6B749F42B187D6F005481E7 /* TranscationRecordAlertModel.swift in Sources */,
 				46EB2E0000BC20 /* TransactionTypeVM.swift in Sources */,
+				D6B749F22B187AA3005481E7 /* OrderDetailTransactionView.swift in Sources */,
 				D60A62102B15BCF2009270D9 /* InProgressController.swift in Sources */,
+				D64ABA502B17291F00F01EA1 /* Double+Extension.swift in Sources */,
 				D60A62242B15DCCB009270D9 /* TransactionFilterTitleView.swift in Sources */,
 				46EB2E0000BC60 /* UIImage+Extension.swift in Sources */,
 				46EB2E0000BC70 /* UIScrollView+Extension.swift in Sources */,
 				46EB2E0000BC80 /* UserDefaults+Extension.swift in Sources */,
+				D64ABA462B16E25C00F01EA1 /* HistoryDetailVM.swift in Sources */,
 				46EB2E0000BDC0 /* ZJAssets-dummy.m in Sources */,
 				46EB2E0000BD30 /* ZJAssetsModule.swift in Sources */,
 				46EB2E0000B7A0 /* ZJAssetsViewController.swift in Sources */,
 				46EB2E0000B8B0 /* ZJNoSignalView.swift in Sources */,
-				46EB2E0000BA50 /* ZJOrderDetailViewController.swift in Sources */,
+				46EB2E0000BA50 /* OrderDetailViewController.swift in Sources */,
 				46EB2E0000BCF0 /* ZJSegmentedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,7 +22,7 @@ public struct ZJAssetsModule: ZJModule {
             let orderId = $0.parameters["orderId"] as! String
             let orderType = $0.parameters["orderType"] as! Int
             let productId = $0.parameters["productId"] as! String
-            return ZJOrderDetailViewController()
+            return OrderDetailViewController(productId: productId, orderId: orderId)
         }
         
         ZJAssetsRoutableTarget.register(path: ZJAssetsRoutePath.test) { _ in

@@ -32,6 +32,14 @@ enum API {
     case historyTrade(TransactionParam)
     /// 旧版交易记录入口
     case oldOrderEntrance
+    /// 历史记录详情
+    case getHistoryDetail(historyId: String)
+    /// 订单详情
+    case getOrderDetail(orderId: String)
+    /// 续投按钮
+    case toggleAutoLend(orderId: String)
+    /// 订单历史记录
+    case orderHistory(orderId: String)
 }
 
 extension API: ZJRequestTargetType {
@@ -60,6 +68,14 @@ extension API: ZJRequestTargetType {
             return "/biz/asset/trade/query/list"
         case .oldOrderEntrance:
             return "/biz/asset/trade/existHistoryRecord"
+        case .getHistoryDetail:
+            return "/transaction/detail/id"
+        case .getOrderDetail:
+            return "/biz/order/p2p/fiexed/detail"
+        case .toggleAutoLend:
+            return "/order/continue/toggle/btn"
+        case .orderHistory:
+            return "/order/invest/list/historyDetailList"
         }
     }
     
@@ -86,6 +102,14 @@ extension API: ZJRequestTargetType {
         case .historyTrade:
             return .get
         case .oldOrderEntrance:
+            return .get
+        case .getHistoryDetail:
+            return .get
+        case .getOrderDetail:
+            return .get
+        case .toggleAutoLend:
+            return .post
+        case .orderHistory:
             return .get
         }
     }
@@ -132,6 +156,22 @@ extension API: ZJRequestTargetType {
             return .requestParameters(parameters: dict, encoding: URLEncoding.default)
         case .oldOrderEntrance:
             return .requestPlain
+        case .getHistoryDetail(let historyId):
+            var params = [String: Any]()
+            params["historyId"] = historyId
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
+        case .getOrderDetail(let orderId):
+            var params = [String: Any]()
+            params["orderId"] = orderId
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
+        case .toggleAutoLend(let orderId):
+            var params = [String: Any]()
+            params["orderId"] = orderId
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
+        case .orderHistory(let orderId):
+            var params = [String: Any]()
+            params["orderId"] = orderId
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
         }
     }
     
